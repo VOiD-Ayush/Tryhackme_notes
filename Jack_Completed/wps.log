@@ -1,0 +1,112 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.18
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://jack.thm/ [10.10.167.58]
+[32m[+][0m Started: Sun Aug  8 22:13:24 2021
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entry: Server: Apache/2.4.18 (Ubuntu)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m robots.txt found: http://jack.thm/robots.txt
+ | Interesting Entries:
+ |  - /wp-admin/
+ |  - /wp-admin/admin-ajax.php
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://jack.thm/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[32m[+][0m WordPress readme found: http://jack.thm/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m Upload directory has listing enabled: http://jack.thm/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://jack.thm/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.3.2 identified (Insecure, released on 2019-12-18).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://jack.thm/index.php/feed/, <generator>https://wordpress.org/?v=5.3.2</generator>
+ |  - http://jack.thm/index.php/comments/feed/, <generator>https://wordpress.org/?v=5.3.2</generator>
+
+[32m[+][0m WordPress theme in use: online-portfolio
+ | Location: http://jack.thm/wp-content/themes/online-portfolio/
+ | Last Updated: 2021-07-30T00:00:00.000Z
+ | Readme: http://jack.thm/wp-content/themes/online-portfolio/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 0.1.0
+ | Style URL: http://jack.thm/wp-content/themes/online-portfolio/style.css?ver=5.3.2
+ | Style Name: Online Portfolio
+ | Style URI: https://www.amplethemes.com/downloads/online-protfolio/
+ | Description: Online Portfolio WordPress portfolio theme for building personal website. You can take full advantag...
+ | Author: Ample Themes
+ | Author URI: https://amplethemes.com/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ | Confirmed By: Css Style In 404 Page (Passive Detection)
+ |
+ | Version: 0.0.7 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://jack.thm/wp-content/themes/online-portfolio/style.css?ver=5.3.2, Match: 'Version: 0.0.7'
+
+[32m[+][0m Enumerating Users (via Passive and Aggressive Methods)
+
+ Brute Forcing Author IDs -: |===============================================================|
+
+[34m[i][0m User(s) Identified:
+
+[32m[+][0m jack
+ | Found By: Rss Generator (Passive Detection)
+ | Confirmed By:
+ |  Wp Json Api (Aggressive Detection)
+ |   - http://jack.thm/index.php/wp-json/wp/v2/users/?per_page=100&page=1
+ |  Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ |  Login Error Messages (Aggressive Detection)
+
+[32m[+][0m wendy
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[32m[+][0m danny
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[33m[!][0m No WPScan API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[32m[+][0m Finished: Sun Aug  8 22:13:46 2021
+[32m[+][0m Requests Done: 59
+[32m[+][0m Cached Requests: 9
+[32m[+][0m Data Sent: 14.034 KB
+[32m[+][0m Data Received: 371.931 KB
+[32m[+][0m Memory used: 159.719 MB
+[32m[+][0m Elapsed time: 00:00:21

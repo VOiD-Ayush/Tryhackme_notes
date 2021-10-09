@@ -1,0 +1,43 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.156.229/
+[+] Method:                  GET
+[+] Threads:                 70
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,txt,js,php
+[+] Timeout:                 10s
+===============================================================
+2021/08/07 00:07:15 Starting gobuster in directory enumeration mode
+===============================================================
+/.htaccess            (Status: 403) [Size: 297]
+/.htaccess.txt        (Status: 403) [Size: 301]
+/.htaccess.js         (Status: 403) [Size: 300]
+/.htaccess.php        (Status: 403) [Size: 301]
+/.htaccess.html       (Status: 403) [Size: 302]
+/.hta.txt             (Status: 403) [Size: 296]
+/.htpasswd            (Status: 403) [Size: 297]
+/.hta.js              (Status: 403) [Size: 295]
+/.htpasswd.html       (Status: 403) [Size: 302]
+/.hta.php             (Status: 403) [Size: 296]
+/.htpasswd.txt        (Status: 403) [Size: 301]
+/.hta.html            (Status: 403) [Size: 297]
+/.htpasswd.js         (Status: 403) [Size: 300]
+/.hta                 (Status: 403) [Size: 292]
+/.htpasswd.php        (Status: 403) [Size: 301]
+/assets               (Status: 301) [Size: 315] [--> http://10.10.156.229/assets/]
+/delete               (Status: 200) [Size: 65]                                    
+/index.php            (Status: 200) [Size: 1274]                                  
+/index.php            (Status: 200) [Size: 1274]                                  
+/item.php             (Status: 200) [Size: 208]                                   
+/requests.txt         (Status: 200) [Size: 1]                                     
+/robots.txt           (Status: 200) [Size: 17]                                    
+/robots.txt           (Status: 200) [Size: 17]                                    
+/server-status        (Status: 403) [Size: 301]                                   
+/shop.php             (Status: 200) [Size: 2642]                                  
+===============================================================
+2021/08/07 00:08:29 Finished
+===============================================================
