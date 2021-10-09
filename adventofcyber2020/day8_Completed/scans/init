@@ -1,0 +1,28 @@
+# Nmap 7.91 scan initiated Sun Jul 11 11:02:33 2021 as: nmap -sC -sV -vv -oN scans/init 10.10.178.232
+Nmap scan report for 10.10.178.232
+Host is up, received syn-ack (0.20s latency).
+Scanned at 2021-07-11 11:02:34 IST for 53s
+Not shown: 997 closed ports
+Reason: 997 conn-refused
+PORT     STATE SERVICE       REASON  VERSION
+80/tcp   open  http          syn-ack Apache httpd 2.4.29 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: 9268CAEFAF1552FC4167D1BD206BE1AA
+|_http-generator: Hugo 0.78.2
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: TBFC&#39;s Internal Blog
+2222/tcp open  ssh           syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 cf:c9:99:d0:5c:09:27:cd:a1:a8:1b:c2:b1:d5:ef:a6 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCudoxbpD/VG2AnwtrG/HQdFnlEXJr2itwbC6Fb0/hlMe8QxXXc0FxY77GHkpedJ9cLDqei509e6sGuO20EorYGueHmdMIP5gUDRHCuvuXezBe7RrU9FytN7H8oHP61gTydIDuPW+TO+Y1H9SGTG7TutcfvQcwqcg9HGR/ZAJaZlgzPgm/M/CyisWjfjnAXnRT7JPMuJybdec1utoc+bHwnkR2l6NRmVpWmTesxU4b/69Qu6imbTbkXrTRNy0UPdoLCVPxakoVnV6rE0r2Gbckhu+MhlWjXfQnJbKGeFuvZWOpwtSB6dmVDOG4Xx5Q0htvOCepOJ54OcZbIphvlbJBr
+|   256 4c:d4:f9:20:6b:ce:fc:62:99:54:7d:c2:b4:b2:f2:b2 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAirgoQLDOX59d1HTrcSijLrBtmrId0RIf0GNfwYnsvPbA2you+IDigr/GxM4BvZzMW8ykwem2XKgO58IiMfoFg=
+|   256 d0:e6:72:18:b5:20:89:75:d5:69:74:ac:cc:b8:3b:9b (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJaUXHMBxa8vB36vXxHvsCfEiMrH8R6xlwPJRtsCCphG
+3389/tcp open  ms-wbt-server syn-ack xrdp
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 11 11:03:27 2021 -- 1 IP address (1 host up) scanned in 53.68 seconds

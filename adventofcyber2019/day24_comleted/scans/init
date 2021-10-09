@@ -1,0 +1,86 @@
+# Nmap 7.91 scan initiated Mon Jul 12 21:05:03 2021 as: nmap -sC -sV -vv -oN scans/init 10.10.170.6
+Increasing send delay for 10.10.170.6 from 0 to 5 due to 50 out of 166 dropped probes since last increase.
+Nmap scan report for 10.10.170.6
+Host is up, received conn-refused (0.21s latency).
+Scanned at 2021-07-12 21:05:03 IST for 41s
+Not shown: 996 closed ports
+Reason: 996 conn-refused
+PORT     STATE SERVICE REASON  VERSION
+22/tcp   open  ssh     syn-ack OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 0a:ee:6d:36:10:72:ce:f0:ef:40:9e:63:52:a9:86:44 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDQhzfX1LIkI2dQMU7g2KVbviUjMAUdu2McGy//dcj0hrCeK+GO5m5UQB7M8AAVEJAFp8D3AuT9+5j1bbbhoNGCRwllDhlS50+KMtCipMLVF8QqHb6XL9abhMyTgWHhTbC9D6GzF5foVoUb8sZBPcguXjxQ973j4CrlAS5v2/7nIT7GapEiaoAvJLs8H7XbOsDTeAdyLFr8R+OuZ7lBuZA3e9VZaCdoJoIHK0n/TyMAt2J8hRAgSftbDELDnAsWVm4gdabZgu3aNiSIP69EWQKnpFlEX6jEjjAVgW66iXicqe+P6B1HKDzA73iSZOEYeUI85iA/rdUcNaMY3spIrwj
+|   256 11:6e:8f:7f:15:66:e3:03:b1:c4:55:f8:e7:bb:59:23 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKoK85UZiz0IoEw2eIiVvl746zfPcW4tJH4CfLNTv9HbSgFqNnessk+kInk98Ts9w6olUanJN5JO8v+sFHVteew=
+|   256 b3:12:7a:7f:ac:89:72:c9:25:88:96:20:ad:c7:5b:4a (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPHZvdmlsgFcY4iQM5ATd9THlDW4EE7uc6xR8neoOEBB
+
+5601/tcp open  esmagent?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, Kerberos, RPCCheck, RTSPRequest, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     kbn-name: kibana
+|     kbn-xpack-sig: 5a29ca259924bec4872ad69d3677ec71
+|     content-type: application/json; charset=utf-8
+|     cache-control: no-cache
+|     content-length: 60
+|     Date: Mon, 04 May 2020 19:44:01 GMT
+|     Connection: close
+|     {"statusCode":404,"error":"Not Found","message":"Not Found"}
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     kbn-name: kibana
+|     kbn-xpack-sig: 5a29ca259924bec4872ad69d3677ec71
+|     cache-control: no-cache
+|     content-type: text/html; charset=utf-8
+|     content-length: 217
+|     accept-ranges: bytes
+|     Date: Mon, 04 May 2020 19:44:00 GMT
+|     Connection: close
+|     <script>var hashRoute = '/app/kibana';
+|     defaultRoute = '/app/kibana';
+|     hash = window.location.hash;
+|     (hash.length) {
+|     window.location = hashRoute + hash;
+|     else {
+|     window.location = defaultRoute;
+|     }</script>
+|   HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     kbn-name: kibana
+|     kbn-xpack-sig: 5a29ca259924bec4872ad69d3677ec71
+|     content-type: application/json; charset=utf-8
+|     cache-control: no-cache
+|     content-length: 38
+|     Date: Mon, 04 May 2020 19:44:00 GMT
+|     Connection: close
+|_    {"statusCode":404,"error":"Not Found"}
+
+111/tcp  open  rpcbind syn-ack 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+
+
+8000/tcp open  http    syn-ack SimpleHTTPServer 0.6 (Python 3.7.4)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: SimpleHTTP/0.6 Python/3.7.4
+|_http-title: Directory listing for /
+
+
+9200/tcp open  http    syn-ack Elasticsearch REST API 6.4.2 (name: sn6hfBl; cluster: elasticsearch; Lucene 7.4.0)
+|_http-favicon: Unknown favicon MD5: 6177BFB75B498E0BB356223ED76FFE43
+| http-methods: 
+|   Supported Methods: DELETE HEAD GET OPTIONS
+|_  Potentially risky methods: DELETE
+|_http-title: Site doesn't have a title (application/json; charset=UTF-8).
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 12 21:05:44 2021 -- 1 IP address (1 host up) scanned in 40.76 seconds

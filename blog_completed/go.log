@@ -1,0 +1,36 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://blog.thm/
+[+] Method:                  GET
+[+] Threads:                 70
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,txt,js,css,php
+[+] Timeout:                 10s
+===============================================================
+2021/07/23 23:10:44 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta.txt             (Status: 403) [Size: 273]
+/.hta.js              (Status: 403) [Size: 273]
+/.hta.css             (Status: 403) [Size: 273]
+/.hta.php             (Status: 403) [Size: 273]
+/.hta                 (Status: 403) [Size: 273]
+/.hta.html            (Status: 403) [Size: 273]
+/.htaccess            (Status: 403) [Size: 273]
+/.htaccess.html       (Status: 403) [Size: 273]
+/.htaccess.txt        (Status: 403) [Size: 273]
+/.htaccess.js         (Status: 403) [Size: 273]
+/.htaccess.css        (Status: 403) [Size: 273]
+/.htpasswd.js         (Status: 403) [Size: 273]
+/.htaccess.php        (Status: 403) [Size: 273]
+/.htpasswd.css        (Status: 403) [Size: 273]
+/.htpasswd.php        (Status: 403) [Size: 273]
+/.htpasswd            (Status: 403) [Size: 273]
+/.htpasswd.html       (Status: 403) [Size: 273]
+/.htpasswd.txt        (Status: 403) [Size: 273]
+/0                    (Status: 301) [Size: 0] [--> http://blog.thm/0/]
+/admin                (Status: 302) [Size: 0] [--> http://blog.thm/wp-admin/]
+/atom                 (Status: 301) [Size: 0] [--> http://blog.thm/feed/atom/]

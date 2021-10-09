@@ -1,0 +1,21 @@
+# Nmap 7.91 scan initiated Thu Aug 12 09:59:05 2021 as: nmap -sC -sV -vv -oN scans/init 10.10.189.178
+Nmap scan report for 10.10.189.178
+Host is up, received conn-refused (0.27s latency).
+Scanned at 2021-08-12 09:59:05 IST for 294s
+Not shown: 998 closed ports
+Reason: 998 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 7.5 (FreeBSD 20170903; protocol 2.0)
+| ssh-hostkey: 
+|   2048 5b:e6:85:66:d8:dd:04:f0:71:7a:81:3c:58:ad:0b:b9 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHwR9KKb3OSPvSUHz9yw6aPdhsdjjZx9CvUN60u5d/OQCXcYo+4HVppBUIv31LQyJjkx2xexQTA/hZtsxDFDm+hmkh1MF7lhnsKLhfPHt/7fcUzvkMuqBAAnuaQuBtl6Uamqi+1KW018dwf0tGh7PoKgTsx0gC+Bic+yY/I2fxvqkGTOlGZEiCEXEbe/eTGdruo0w2vVH1e4VoxAoL2wPBSchR8R53j6sbED8+QbahdhsdEGBGrQ481disFjBMLy+DbNYMviqIvMcRKv11fut843iuJssl0P4/h0ewOgDBGS3bcnatPr7o8YNjf05rHJ0lcuhCZBbuzzvzF+26EMef
+|   256 d5:4e:18:45:ba:d4:75:2d:55:2f:fe:c9:1c:db:ce:cb (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPlqfDN7Lwi9D/1vME40xU+tiXw3ubwrqePXtNytyFeJAb4CA2qW+cuPq67LcRT7haCOoX+rDENgL+sFi3eg1Lw=
+|   256 96:fc:cc:3e:69:00:79:85:14:2a:e4:5f:0d:35:08:d4 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ6YQS6APysyb8rYAxb4jbQdlorQdNW/urVO4RPXQoPe
+23/tcp open  telnet  syn-ack BSD-derived telnetd
+Service Info: OS: FreeBSD; CPE: cpe:/o:freebsd:freebsd
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 12 10:03:59 2021 -- 1 IP address (1 host up) scanned in 294.42 seconds

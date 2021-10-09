@@ -1,0 +1,5 @@
+/index.html           (Status: 200) [Size: 279]
+/upload               (Status: 301) [Size: 235] [--> http://10.10.25.241/upload/]
+/cms                  (Status: 301) [Size: 232] [--> http://10.10.25.241/cms/]
+/api                  (Status: 301) [Size: 232] [--> http://10.10.25.241/api/]
+/robots.txt           (Status: 200) [Size: 46]

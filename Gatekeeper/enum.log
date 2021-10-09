@@ -1,0 +1,66 @@
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Thu Jul 29 00:02:18 2021
+
+ ========================== 
+|    Target Information    |
+ ========================== 
+Target ........... 10.10.71.155
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+ ==================================================== 
+|    Enumerating Workgroup/Domain on 10.10.71.155    |
+ ==================================================== 
+[+] Got domain/workgroup name: WORKGROUP
+
+ ===================================== 
+|    Session Check on 10.10.71.155    |
+ ===================================== 
+[+] Server 10.10.71.155 allows sessions using username '', password ''
+
+ =========================================== 
+|    Getting domain SID for 10.10.71.155    |
+ =========================================== 
+Could not initialise lsarpc. Error was NT_STATUS_ACCESS_DENIED
+[+] Can't determine if host is part of domain or part of a workgroup
+
+ ============================= 
+|    Users on 10.10.71.155    |
+ ============================= 
+[E] Couldn't find users using querydispinfo: NT_STATUS_ACCESS_DENIED
+
+[E] Couldn't find users using enumdomusers: NT_STATUS_ACCESS_DENIED
+
+ ========================================= 
+|    Share Enumeration on 10.10.71.155    |
+ ========================================= 
+
+	Sharename       Type      Comment
+	---------       ----      -------
+SMB1 disabled -- no workgroup available
+
+[+] Attempting to map shares on 10.10.71.155
+
+ ==================================================== 
+|    Password Policy Information for 10.10.71.155    |
+ ==================================================== 
+[E] Unexpected error from polenum:
+
+
+[+] Attaching to 10.10.71.155 using a NULL share
+
+[+] Trying protocol 139/SMB...
+
+	[!] Protocol failed: Cannot request session (Called Name:10.10.71.155)
+
+[+] Trying protocol 445/SMB...
+
+	[!] Protocol failed: SMB SessionError: STATUS_ACCESS_DENIED({Access Denied} A process has requested access to an object but has not been granted those access rights.)
+
+
+[E] Failed to get password policy with rpcclient
+
+enum4linux complete on Thu Jul 29 00:02:32 2021
+

@@ -1,0 +1,78 @@
+# Nmap 7.91 scan initiated Fri Aug 13 21:44:45 2021 as: nmap -sC -sV -vv -oN scans/init 10.10.158.120
+Nmap scan report for 10.10.158.120
+Host is up, received conn-refused (0.23s latency).
+Scanned at 2021-08-13 21:44:46 IST for 85s
+Not shown: 996 closed ports
+Reason: 996 conn-refused
+PORT     STATE SERVICE REASON  VERSION
+22/tcp   open  ssh     syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 1d:f0:d5:f2:67:1e:55:99:de:c6:26:85:b3:86:ea:81 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3bZ4ImRR00WoZVof42Lm+fDsOCS4QRa+Nm67gzMEXHsUrFLXZCMfFv9N7X3S1nmVxy2W7Xw1UzhDXEx+few0UItsLMqORBQt19sXrLNGfbjGHlm5BRF8/MVqU16o13dO0qZd42Ca16ZdipgaiG40h9MOkAAj/932QZs57Y6NWq0/FSbTNKGO/HJpfzWfv9RF33JPNqiGcMSuAXaUttFqPb9qcx0GtrBIgJ8Dlz/eH4mCVK/7sYT+NHlaEIjdSDwAEZKdmFVsp3frSZFIKez1Iw/UgzzgrPSxIiAxBheHUpLgZWbgXLhHogHTZNqDW8CY6s65LQML1+wzEljVUORtf
+|   256 4f:5f:62:98:aa:b1:dd:a2:81:61:16:9b:a5:29:cd:bd (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIqQCmLL3/kioGb5KVnJyue60AW1vy3+/b+6gpnVpQ+UDINt6oyLefIRPxi5bIGror3uo/dqSsWDi/wU1zfo+7A=
+|   256 9b:12:b0:f3:1f:fb:b7:d8:a8:9c:6b:e6:bd:f4:40:55 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMcjqhfwtK4R8OiqGI2BZZTDkQF6M/ycOM6t8s37hGP0
+23/tcp   open  telnet  syn-ack Linux telnetd
+80/tcp   open  http    syn-ack Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Michael Jordan
+9999/tcp open  http    syn-ack Golang net/http server
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 200 OK
+|     Date: Fri, 13 Aug 2021 16:15:28 GMT
+|     Content-Length: 1
+|     Content-Type: text/plain; charset=utf-8
+|   GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain
+|     Connection: close
+|     Request
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Date: Fri, 13 Aug 2021 16:15:27 GMT
+|     Content-Length: 1
+|     Content-Type: text/plain; charset=utf-8
+|   OfficeScan: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain
+|     Connection: close
+|_    Request: missing required Host header
+|_http-favicon: Unknown favicon MD5: 68B329DA9893E34099C7D8AD5CB9C940
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS
+|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9999-TCP:V=7.91%I=7%D=8/13%Time=61169A9E%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,75,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Fri,\x2013\x20Aug\x2020
+SF:21\x2016:15:27\x20GMT\r\nContent-Length:\x201\r\nContent-Type:\x20text/
+SF:plain;\x20charset=utf-8\r\n\r\n\n")%r(HTTPOptions,75,"HTTP/1\.0\x20200\
+SF:x20OK\r\nDate:\x20Fri,\x2013\x20Aug\x202021\x2016:15:27\x20GMT\r\nConte
+SF:nt-Length:\x201\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\n\r\
+SF:n\n")%r(FourOhFourRequest,75,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Fri,\x
+SF:2013\x20Aug\x202021\x2016:15:28\x20GMT\r\nContent-Length:\x201\r\nConte
+SF:nt-Type:\x20text/plain;\x20charset=utf-8\r\n\r\n\n")%r(GenericLines,58,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain\r\nC
+SF:onnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(RTSPRequest,58,"HT
+SF:TP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain\r\nConn
+SF:ection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,58,"HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\r\nContent-Type:\x20text/plain\r\nConnection:\x2
+SF:0close\r\n\r\n400\x20Bad\x20Request")%r(SSLSessionReq,58,"HTTP/1\.1\x20
+SF:400\x20Bad\x20Request\r\nContent-Type:\x20text/plain\r\nConnection:\x20
+SF:close\r\n\r\n400\x20Bad\x20Request")%r(LPDString,58,"HTTP/1\.1\x20400\x
+SF:20Bad\x20Request\r\nContent-Type:\x20text/plain\r\nConnection:\x20close
+SF:\r\n\r\n400\x20Bad\x20Request")%r(SIPOptions,58,"HTTP/1\.1\x20400\x20Ba
+SF:d\x20Request\r\nContent-Type:\x20text/plain\r\nConnection:\x20close\r\n
+SF:\r\n400\x20Bad\x20Request")%r(Socks5,58,"HTTP/1\.1\x20400\x20Bad\x20Req
+SF:uest\r\nContent-Type:\x20text/plain\r\nConnection:\x20close\r\n\r\n400\
+SF:x20Bad\x20Request")%r(OfficeScan,76,"HTTP/1\.1\x20400\x20Bad\x20Request
+SF:\r\nContent-Type:\x20text/plain\r\nConnection:\x20close\r\n\r\n400\x20B
+SF:ad\x20Request:\x20missing\x20required\x20Host\x20header");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 13 21:46:11 2021 -- 1 IP address (1 host up) scanned in 86.26 seconds

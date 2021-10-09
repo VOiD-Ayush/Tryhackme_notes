@@ -1,0 +1,42 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.108.179/
+[+] Method:                  GET
+[+] Threads:                 70
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,txt,js,css,php
+[+] Timeout:                 10s
+===============================================================
+2021/07/09 19:19:20 Starting gobuster in directory enumeration mode
+===============================================================
+/.htpasswd.html       (Status: 403) [Size: 278]
+/.htaccess.php        (Status: 403) [Size: 278]
+/.hta.css             (Status: 403) [Size: 278]
+/.htpasswd.txt        (Status: 403) [Size: 278]
+/.hta                 (Status: 403) [Size: 278]
+/.htaccess.html       (Status: 403) [Size: 278]
+/.htpasswd.js         (Status: 403) [Size: 278]
+/.htaccess            (Status: 403) [Size: 278]
+/.hta.php             (Status: 403) [Size: 278]
+/.htpasswd.css        (Status: 403) [Size: 278]
+/.htaccess.txt        (Status: 403) [Size: 278]
+/.hta.html            (Status: 403) [Size: 278]
+/.htpasswd.php        (Status: 403) [Size: 278]
+/.htaccess.js         (Status: 403) [Size: 278]
+/.hta.txt             (Status: 403) [Size: 278]
+/.htpasswd            (Status: 403) [Size: 278]
+/.htaccess.css        (Status: 403) [Size: 278]
+/.hta.js              (Status: 403) [Size: 278]
+/api                  (Status: 301) [Size: 312] [--> http://10.10.108.179/api/]
+/index.html           (Status: 200) [Size: 467]                                
+/index.html           (Status: 200) [Size: 467]                                
+/index.js             (Status: 200) [Size: 4071]                               
+/LICENSE              (Status: 200) [Size: 1086]                               
+/server-status        (Status: 403) [Size: 278]                                
+===============================================================
+2021/07/09 19:21:24 Finished
+===============================================================

@@ -1,0 +1,16 @@
+# Nmap 7.91 scan initiated Sat Aug  7 19:15:13 2021 as: nmap -sC -sV -vv -p 80,6379 -oN scans/ports 10.10.152.227
+Nmap scan report for 10.10.152.227
+Host is up, received syn-ack (0.47s latency).
+Scanned at 2021-08-07 19:15:14 IST for 14s
+
+PORT     STATE SERVICE REASON  VERSION
+80/tcp   open  http    syn-ack Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+6379/tcp open  redis   syn-ack Redis key-value store 6.0.7
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug  7 19:15:28 2021 -- 1 IP address (1 host up) scanned in 15.03 seconds

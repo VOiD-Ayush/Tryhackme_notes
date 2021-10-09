@@ -1,0 +1,20 @@
+# Nmap 7.91 scan initiated Sun Jul 11 20:35:49 2021 as: nmap -sC -sV -vv -oN scans/init 10.10.111.7
+Nmap scan report for 10.10.111.7
+Host is up, received conn-refused (0.21s latency).
+Scanned at 2021-07-11 20:35:50 IST for 37s
+Not shown: 999 closed ports
+Reason: 999 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 63:4e:92:56:5a:70:83:65:74:7c:c2:8c:61:6b:54:f7 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZNI93zz212fyazB4qg7G5IqlZN9B3hIjDyCmYdO9u9t5Z+oCXmpr8WzFNvaDxq3DmkIRCh/GSn2XtzLBPSi2kpskrarwUuhzjKqiAiJzecCLcbSq3ZEAROqadbDoKwirAqhhfKQ1IndInCe1f2OCHRxTXyyUEigeGDq9nKOTgW3C+aHmmlAxtLS5skLHDGBcA4n9NXVnpJ6hR/X0zxh2syGe004M6KcpykBN+ayc2OS/yJuosiQnlMwdxNwimaL861lYwVSe4ZFNfESvjNHrkBkJKmxJADPmt02Vs3OXbkzFH4+OG9bMiGQTuFWkaqVTU842nmGp8v/X8aSLSgCB1
+|   256 7f:34:2d:e5:fe:82:4f:56:01:39:e7:d5:0e:30:20:14 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCi0GiWVCFeGSBuo1Ui6wD9VyAsyRmUWrD1lnOdl32JksOgquukxh8gCf6Fowi0A6WDEdFU90k1uzEEOKmlHMYo=
+|   256 e1:b2:5f:b5:6c:bb:18:f8:d7:26:b8:57:5d:74:cd:21 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPjCWkig6dgOYJ0TIMHrZ9W7d/ymBb2ku/gQ91B4W+uq
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 11 20:36:27 2021 -- 1 IP address (1 host up) scanned in 37.95 seconds

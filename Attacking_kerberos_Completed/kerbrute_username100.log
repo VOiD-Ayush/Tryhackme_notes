@@ -1,0 +1,23 @@
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 08/10/21 - Ronnie Flathers @ropnop
+
+2021/08/10 11:15:30 >  Using KDC(s):[0m
+2021/08/10 11:15:30 >  	CONTROLLER.local:88
+[0m
+[32m2021/08/10 11:15:30 >  [+] VALID USERNAME:	 administrator@CONTROLLER.local[0m
+[32m2021/08/10 11:15:30 >  [+] VALID USERNAME:	 admin1@CONTROLLER.local[0m
+[32m2021/08/10 11:15:30 >  [+] VALID USERNAME:	 admin2@CONTROLLER.local[0m
+[32m2021/08/10 11:15:33 >  [+] VALID USERNAME:	 httpservice@CONTROLLER.local[0m
+[32m2021/08/10 11:15:33 >  [+] VALID USERNAME:	 machine1@CONTROLLER.local[0m
+[32m2021/08/10 11:15:33 >  [+] VALID USERNAME:	 sqlservice@CONTROLLER.local[0m
+[32m2021/08/10 11:15:33 >  [+] VALID USERNAME:	 user3@CONTROLLER.local[0m
+[32m2021/08/10 11:15:33 >  [+] VALID USERNAME:	 user2@CONTROLLER.local[0m
+[32m2021/08/10 11:15:33 >  [+] VALID USERNAME:	 user1@CONTROLLER.local[0m
+[32m2021/08/10 11:15:33 >  [+] VALID USERNAME:	 machine2@CONTROLLER.local[0m
+2021/08/10 11:15:33 >  Done! Tested 100 usernames (10 valid) in 3.014 seconds[0m

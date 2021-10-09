@@ -1,0 +1,36 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.152.227/
+[+] Method:                  GET
+[+] Threads:                 70
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,html,txt,js
+[+] Timeout:                 10s
+===============================================================
+2021/08/07 19:17:10 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta.js              (Status: 403) [Size: 278]
+/.hta.php             (Status: 403) [Size: 278]
+/.hta                 (Status: 403) [Size: 278]
+/.hta.html            (Status: 403) [Size: 278]
+/.hta.txt             (Status: 403) [Size: 278]
+/.htpasswd            (Status: 403) [Size: 278]
+/.htpasswd.txt        (Status: 403) [Size: 278]
+/.htpasswd.js         (Status: 403) [Size: 278]
+/.htpasswd.php        (Status: 403) [Size: 278]
+/.htpasswd.html       (Status: 403) [Size: 278]
+/.htaccess.txt        (Status: 403) [Size: 278]
+/.htaccess            (Status: 403) [Size: 278]
+/.htaccess.js         (Status: 403) [Size: 278]
+/.htaccess.php        (Status: 403) [Size: 278]
+/.htaccess.html       (Status: 403) [Size: 278]
+/index.html           (Status: 200) [Size: 11321]
+/index.html           (Status: 200) [Size: 11321]
+/server-status        (Status: 403) [Size: 278]  
+===============================================================
+2021/08/07 19:18:35 Finished
+===============================================================

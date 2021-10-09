@@ -1,0 +1,149 @@
+# Nmap 7.91 scan initiated Wed Jul 28 23:50:34 2021 as: nmap -sC -sV -vv -p 135,139,445,3389,31337,49152,49153,49154,49455,49161,49162 -oN scans/ports 10.10.71.155
+Nmap scan report for 10.10.71.155
+Host is up, received conn-refused (0.36s latency).
+Scanned at 2021-07-28 23:50:35 IST for 130s
+
+PORT      STATE  SERVICE            REASON       VERSION
+135/tcp   open   msrpc              syn-ack      Microsoft Windows RPC
+139/tcp   open   netbios-ssn        syn-ack      Microsoft Windows netbios-ssn
+445/tcp   open   microsoft-ds       syn-ack      Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open   ssl/ms-wbt-server? syn-ack
+| ssl-cert: Subject: commonName=gatekeeper
+| Issuer: commonName=gatekeeper
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2021-07-27T18:15:09
+| Not valid after:  2022-01-26T18:15:09
+| MD5:   375f c287 a0c5 226f d5d3 ee45 9c2c a7c2
+| SHA-1: 1547 88d0 da77 7f54 1c90 38f8 a71e 4ff5 c001 4c56
+| -----BEGIN CERTIFICATE-----
+| MIIC2DCCAcCgAwIBAgIQPwBLruYkdKZF5lpz31I8dDANBgkqhkiG9w0BAQUFADAV
+| MRMwEQYDVQQDEwpnYXRla2VlcGVyMB4XDTIxMDcyNzE4MTUwOVoXDTIyMDEyNjE4
+| MTUwOVowFTETMBEGA1UEAxMKZ2F0ZWtlZXBlcjCCASIwDQYJKoZIhvcNAQEBBQAD
+| ggEPADCCAQoCggEBAKVOjsdqslUfnFiZeK9f+BGJUv6Soksz+0auIB1s+3zgzerO
+| uh1jnpgsuHUMX9Yf18unC4mbggJXfYHFPV+RYtbskQgwYA9sV7eBoTjJ7pALMWdC
+| IWk2r/G9Y2anvKwfXKKtWo6Y4FaLIF1chhrH+Q/sMM8rkcydWetTTmcW9yk2sFPJ
+| UbpEtbFav/5vn2HM1EmFBS660NX5s/f6q3MimZXtjPYSgJ9Cs/xG9rI3VvqjFAtR
+| z8AyNc5ovGeqEBuaH0oI4fMyyrTErIijvaHrqttgdQlIKukcUJhlasRQH20h4w3n
+| x2DgeNkv9nt9kGT5qXtvk3SkvfvuWthKXC1Uf4sCAwEAAaMkMCIwEwYDVR0lBAww
+| CgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBBQUAA4IBAQAQwogZ
+| vXXYR3GgyuVrKsLJkjVtG+E0C5Exr7PYQ7qY+44J9ukl58BL2FomxNjGm2qXA/H9
+| VCDHhCITkU4C50p3hIoZ5Nll6MNuNG95rh6R/oOsklJH9dXjC1pGPVMqPdyTgwSN
+| 9EqueoTtI10rNQ3YEVN7+lHTtfLxRarxxMaN+ene9oVYOvLDBNuLc4niFRIc21Dc
+| MHFhJ2iMI1fT7T94WKNI32fCjmsy21EqRaY8qcqV8Nx9mkSGipjsn0qTAmVjK2nS
+| kdJpO4NFBYXZVF3stmqGGfZm/q0w61cUBtbUhorbDulk4e6rnMuLrDtZWO+ivh4h
+| 7bWhOrToqkeUr40b
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-07-28T18:22:43+00:00; -1s from scanner time.
+31337/tcp open   Elite?             syn-ack
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     Hello GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0
+|     Hello
+|   GenericLines: 
+|     Hello 
+|     Hello
+|   GetRequest: 
+|     Hello GET / HTTP/1.0
+|     Hello
+|   HTTPOptions: 
+|     Hello OPTIONS / HTTP/1.0
+|     Hello
+|   Help: 
+|     Hello HELP
+|   Kerberos: 
+|     Hello !!!
+|   LDAPSearchReq: 
+|     Hello 0
+|     Hello
+|   LPDString: 
+|     Hello 
+|     default!!!
+|   RTSPRequest: 
+|     Hello OPTIONS / RTSP/1.0
+|     Hello
+|   SIPOptions: 
+|     Hello OPTIONS sip:nm SIP/2.0
+|     Hello Via: SIP/2.0/TCP nm;branch=foo
+|     Hello From: <sip:nm@nm>;tag=root
+|     Hello To: <sip:nm2@nm2>
+|     Hello Call-ID: 50000
+|     Hello CSeq: 42 OPTIONS
+|     Hello Max-Forwards: 70
+|     Hello Content-Length: 0
+|     Hello Contact: <sip:nm@nm>
+|     Hello Accept: application/sdp
+|     Hello
+|   SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|_    Hello
+49152/tcp open   msrpc              syn-ack      Microsoft Windows RPC
+49153/tcp open   msrpc              syn-ack      Microsoft Windows RPC
+49154/tcp open   msrpc              syn-ack      Microsoft Windows RPC
+49161/tcp open   msrpc              syn-ack      Microsoft Windows RPC
+49162/tcp open   msrpc              syn-ack      Microsoft Windows RPC
+49455/tcp closed unknown            conn-refused
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port31337-TCP:V=7.91%I=7%D=7/28%Time=61019FFF%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,24,"Hello\x20GET\x20/\x20HTTP/1\.0\r!!!\nHello\x20\r!!!\n")%r
+SF:(SIPOptions,142,"Hello\x20OPTIONS\x20sip:nm\x20SIP/2\.0\r!!!\nHello\x20
+SF:Via:\x20SIP/2\.0/TCP\x20nm;branch=foo\r!!!\nHello\x20From:\x20<sip:nm@n
+SF:m>;tag=root\r!!!\nHello\x20To:\x20<sip:nm2@nm2>\r!!!\nHello\x20Call-ID:
+SF:\x2050000\r!!!\nHello\x20CSeq:\x2042\x20OPTIONS\r!!!\nHello\x20Max-Forw
+SF:ards:\x2070\r!!!\nHello\x20Content-Length:\x200\r!!!\nHello\x20Contact:
+SF:\x20<sip:nm@nm>\r!!!\nHello\x20Accept:\x20application/sdp\r!!!\nHello\x
+SF:20\r!!!\n")%r(GenericLines,16,"Hello\x20\r!!!\nHello\x20\r!!!\n")%r(HTT
+SF:POptions,28,"Hello\x20OPTIONS\x20/\x20HTTP/1\.0\r!!!\nHello\x20\r!!!\n"
+SF:)%r(RTSPRequest,28,"Hello\x20OPTIONS\x20/\x20RTSP/1\.0\r!!!\nHello\x20\
+SF:r!!!\n")%r(Help,F,"Hello\x20HELP\r!!!\n")%r(SSLSessionReq,C,"Hello\x20\
+SF:x16\x03!!!\n")%r(TerminalServerCookie,B,"Hello\x20\x03!!!\n")%r(TLSSess
+SF:ionReq,C,"Hello\x20\x16\x03!!!\n")%r(Kerberos,A,"Hello\x20!!!\n")%r(Fou
+SF:rOhFourRequest,47,"Hello\x20GET\x20/nice%20ports%2C/Tri%6Eity\.txt%2eba
+SF:k\x20HTTP/1\.0\r!!!\nHello\x20\r!!!\n")%r(LPDString,12,"Hello\x20\x01de
+SF:fault!!!\n")%r(LDAPSearchReq,17,"Hello\x200\x84!!!\nHello\x20\x01!!!\n"
+SF:);
+Service Info: Host: GATEKEEPER; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 59m59s, deviation: 2h00m00s, median: -1s
+| nbstat: NetBIOS name: GATEKEEPER, NetBIOS user: <unknown>, NetBIOS MAC: 02:b5:56:3e:6b:67 (unknown)
+| Names:
+|   GATEKEEPER<00>       Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   GATEKEEPER<20>       Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+| Statistics:
+|   02 b5 56 3e 6b 67 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 57334/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 47893/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 18148/udp): CLEAN (Timeout)
+|   Check 4 (port 26175/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1:professional
+|   Computer name: gatekeeper
+|   NetBIOS computer name: GATEKEEPER\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-07-28T14:22:36-04:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-07-28T18:22:36
+|_  start_date: 2021-07-28T18:15:02
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jul 28 23:52:45 2021 -- 1 IP address (1 host up) scanned in 131.28 seconds

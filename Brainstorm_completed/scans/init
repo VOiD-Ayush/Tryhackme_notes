@@ -1,0 +1,136 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-29 18:15 IST
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 18:15
+Completed NSE at 18:15, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 18:15
+Completed NSE at 18:15, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 18:15
+Completed NSE at 18:15, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 18:15
+Completed Parallel DNS resolution of 1 host. at 18:15, 0.06s elapsed
+Initiating Connect Scan at 18:15
+Scanning 10.10.253.215 [1000 ports]
+Discovered open port 21/tcp on 10.10.253.215
+Discovered open port 3389/tcp on 10.10.253.215
+Discovered open port 9999/tcp on 10.10.253.215
+Completed Connect Scan at 18:15, 14.26s elapsed (1000 total ports)
+Initiating Service scan at 18:15
+Scanning 3 services on 10.10.253.215
+Stats: 0:01:57 elapsed; 0 hosts completed (1 up), 1 undergoing Service Scan
+Service scan Timing: About 66.67% done; ETC: 18:17 (0:00:51 remaining)
+Completed Service scan at 18:17, 162.66s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.253.215.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 18:17
+NSE: [ftp-bounce 10.10.253.215:21] PORT response: 501 Server cannot accept argument.
+NSE Timing: About 99.76% done; ETC: 18:18 (0:00:00 remaining)
+Completed NSE at 18:18, 31.38s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 18:18
+Completed NSE at 18:18, 2.40s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 18:18
+Completed NSE at 18:18, 0.00s elapsed
+Nmap scan report for 10.10.253.215
+Host is up, received user-set (0.21s latency).
+Scanned at 2021-07-29 18:15:01 IST for 211s
+Not shown: 997 filtered ports
+Reason: 997 no-responses
+PORT     STATE SERVICE            REASON  VERSION
+21/tcp   open  ftp                syn-ack Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: TIMEOUT
+| ftp-syst: 
+|_  SYST: Windows_NT
+3389/tcp open  ssl/ms-wbt-server? syn-ack
+| ssl-cert: Subject: commonName=brainstorm
+| Issuer: commonName=brainstorm
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2021-07-28T12:41:32
+| Not valid after:  2022-01-27T12:41:32
+| MD5:   abb8 9eaf fb6c 7e35 9f4a 9b5e 4f24 56e4
+| SHA-1: 05b7 c0ef 9d90 5fc6 43dc a3e9 ba13 f108 faca 8fb7
+| -----BEGIN CERTIFICATE-----
+| MIIC2DCCAcCgAwIBAgIQXARx2JEEWptA5Cjt5JpJ+TANBgkqhkiG9w0BAQUFADAV
+| MRMwEQYDVQQDEwpicmFpbnN0b3JtMB4XDTIxMDcyODEyNDEzMloXDTIyMDEyNzEy
+| NDEzMlowFTETMBEGA1UEAxMKYnJhaW5zdG9ybTCCASIwDQYJKoZIhvcNAQEBBQAD
+| ggEPADCCAQoCggEBAOq55Ss69n0aB8g2KuAJwglnq2+emLUnoOShCXNJHdVY0jeU
+| V4xZ/BrEaO17eB8e0ddc20EyULpFlg4Ty+SSXsDtZWckv2nsrnn8bPrX+L0pvx3f
+| alx9vycjhBiiBADAEtb8R18bv4BFgRQeQSX60L8dtUELTBrNg2f4zeHdvMUukqZy
+| KuZDI3FDGwiweSoLStnz6jIi2qJiOFgJEFjkAKAWfOK13XgxPSTTmJr8F4FsDhSj
+| h07FCcTSq/qvZcYMEb3MyXclzEOnWMD08wJPBClzQYrZ88KuBw5FD+HzY0t5Q8wT
+| kEVJQWUYq4mwpjAOwwIq+0IgehAI3Su9W2SZd2ECAwEAAaMkMCIwEwYDVR0lBAww
+| CgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBBQUAA4IBAQCjA5bV
+| LJt3XeWA/qX/CPhfK/9psGFIbH8w5lc8xsYRJQBT2Gin+M/clYWFW7gbz4r+L6D5
+| sun59mhCdJ8RUblL6soCvv32XdgT/nAfatNLQoD02DPyvvnHYzhLFUGiJC3YWviB
+| ddm/9JLR/mn0XypFh1Yd+uivZTr1QsMQhlMIBp2+OK2mGfT/l+DsaGVAZ92jtX5+
+| lMvIeZfSNVBmDnJZbxc4nJmCaEJF4FSXCi1ZgAjvFJts2CfwgehCEHgZM0IoF20s
+| gicbGZAEBq20T7DkWTwmFHsPfZwJccxZjMFUfyfA8Vmh/bJ2rpwdFtjfD27fPHWP
+| yY9IUOaSCnKdMpt5
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-07-29T12:48:31+00:00; +1s from scanner time.
+9999/tcp open  abyss?             syn-ack
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, JavaRMI, RPCCheck, RTSPRequest, SSLSessionReq, TerminalServerCookie: 
+|     Welcome to Brainstorm chat (beta)
+|     Please enter your username (max 20 characters): Write a message:
+|   NULL: 
+|     Welcome to Brainstorm chat (beta)
+|_    Please enter your username (max 20 characters):
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9999-TCP:V=7.91%I=7%D=7/29%Time=6102A2E2%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,52,"Welcome\x20to\x20Brainstorm\x20chat\x20\(beta\)\nPlease\x20enter
+SF:\x20your\x20username\x20\(max\x2020\x20characters\):\x20")%r(GetRequest
+SF:,63,"Welcome\x20to\x20Brainstorm\x20chat\x20\(beta\)\nPlease\x20enter\x
+SF:20your\x20username\x20\(max\x2020\x20characters\):\x20Write\x20a\x20mes
+SF:sage:\x20")%r(HTTPOptions,63,"Welcome\x20to\x20Brainstorm\x20chat\x20\(
+SF:beta\)\nPlease\x20enter\x20your\x20username\x20\(max\x2020\x20character
+SF:s\):\x20Write\x20a\x20message:\x20")%r(FourOhFourRequest,63,"Welcome\x2
+SF:0to\x20Brainstorm\x20chat\x20\(beta\)\nPlease\x20enter\x20your\x20usern
+SF:ame\x20\(max\x2020\x20characters\):\x20Write\x20a\x20message:\x20")%r(J
+SF:avaRMI,63,"Welcome\x20to\x20Brainstorm\x20chat\x20\(beta\)\nPlease\x20e
+SF:nter\x20your\x20username\x20\(max\x2020\x20characters\):\x20Write\x20a\
+SF:x20message:\x20")%r(GenericLines,63,"Welcome\x20to\x20Brainstorm\x20cha
+SF:t\x20\(beta\)\nPlease\x20enter\x20your\x20username\x20\(max\x2020\x20ch
+SF:aracters\):\x20Write\x20a\x20message:\x20")%r(RTSPRequest,63,"Welcome\x
+SF:20to\x20Brainstorm\x20chat\x20\(beta\)\nPlease\x20enter\x20your\x20user
+SF:name\x20\(max\x2020\x20characters\):\x20Write\x20a\x20message:\x20")%r(
+SF:RPCCheck,63,"Welcome\x20to\x20Brainstorm\x20chat\x20\(beta\)\nPlease\x2
+SF:0enter\x20your\x20username\x20\(max\x2020\x20characters\):\x20Write\x20
+SF:a\x20message:\x20")%r(DNSVersionBindReqTCP,63,"Welcome\x20to\x20Brainst
+SF:orm\x20chat\x20\(beta\)\nPlease\x20enter\x20your\x20username\x20\(max\x
+SF:2020\x20characters\):\x20Write\x20a\x20message:\x20")%r(DNSStatusReques
+SF:tTCP,63,"Welcome\x20to\x20Brainstorm\x20chat\x20\(beta\)\nPlease\x20ent
+SF:er\x20your\x20username\x20\(max\x2020\x20characters\):\x20Write\x20a\x2
+SF:0message:\x20")%r(Help,63,"Welcome\x20to\x20Brainstorm\x20chat\x20\(bet
+SF:a\)\nPlease\x20enter\x20your\x20username\x20\(max\x2020\x20characters\)
+SF::\x20Write\x20a\x20message:\x20")%r(SSLSessionReq,63,"Welcome\x20to\x20
+SF:Brainstorm\x20chat\x20\(beta\)\nPlease\x20enter\x20your\x20username\x20
+SF:\(max\x2020\x20characters\):\x20Write\x20a\x20message:\x20")%r(Terminal
+SF:ServerCookie,63,"Welcome\x20to\x20Brainstorm\x20chat\x20\(beta\)\nPleas
+SF:e\x20enter\x20your\x20username\x20\(max\x2020\x20characters\):\x20Write
+SF:\x20a\x20message:\x20");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 0s
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 18:18
+Completed NSE at 18:18, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 18:18
+Completed NSE at 18:18, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 18:18
+Completed NSE at 18:18, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 211.12 seconds

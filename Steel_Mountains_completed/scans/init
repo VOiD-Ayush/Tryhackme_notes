@@ -1,0 +1,50 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-30 00:08 IST
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 00:08
+Completed NSE at 00:08, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 00:08
+Completed NSE at 00:08, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 00:08
+Completed NSE at 00:08, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 00:08
+Completed Parallel DNS resolution of 1 host. at 00:08, 0.00s elapsed
+Initiating Connect Scan at 00:08
+Scanning 10.10.253.215 [3 ports]
+Completed Connect Scan at 00:08, 3.00s elapsed (3 total ports)
+Initiating Service scan at 00:08
+NSE: Script scanning 10.10.253.215.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 00:08
+Completed NSE at 00:08, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 00:08
+Completed NSE at 00:08, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 00:08
+Completed NSE at 00:08, 0.00s elapsed
+Nmap scan report for 10.10.253.215
+Host is up, received user-set.
+Scanned at 2021-07-30 00:08:12 IST for 3s
+
+PORT      STATE    SERVICE       REASON      VERSION
+3389/tcp  filtered ms-wbt-server no-response
+5985/tcp  filtered wsman         no-response
+47001/tcp filtered winrm         no-response
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 00:08
+Completed NSE at 00:08, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 00:08
+Completed NSE at 00:08, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 00:08
+Completed NSE at 00:08, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 3.39 seconds

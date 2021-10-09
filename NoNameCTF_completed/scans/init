@@ -1,0 +1,79 @@
+# Nmap 7.91 scan initiated Sat Aug 14 18:55:35 2021 as: nmap -vvv -p 22,80,2222,9090 -sC -sV -oN scans/init 10.10.64.212
+Nmap scan report for 10.10.64.212
+Host is up, received syn-ack (0.29s latency).
+Scanned at 2021-08-14 18:55:36 IST for 137s
+
+PORT     STATE SERVICE       REASON  VERSION
+22/tcp   open  ssh           syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 12:57:3f:cc:86:39:04:3b:f0:e6:46:bf:72:51:64:0b (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1+fzUNMdVOD1RLT2OU1iOC5Av68TQ5E7Jy2x1IPhvOHkU8fzeWJBnAPZuxckO2mtmFL73m4mIRo4nyYmlBrTM090Hyg+P+yJUuqepuTLdjXgZW/e1YvmFXoQUXVEencwBLN3dvYJ0t+Jvu4rfCbeyzHfUkTrt6tzxaX3go8FKjVKuYMNq7frgTSWiO/k3rik1MNy4IedQOmKOCwxxAGdXXy+VcGtUAOWlIod6pBIU4CCEQJxE146xEIQI1czJuHrHXombZzfk9Ov+pY2NloxEORPQ2/sRD2+uYnfl4OBWM/uupeY4doRF5futdZ7u5XP+aHSSMRieBRMsgFuR1her
+|   256 81:05:75:ad:78:83:62:b2:06:41:5b:e5:a5:a9:82:4d (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMgGIaiwLHXLXGtioB2ZXuN/bkckCNW8ddroXERn3jIVjGjvDOZJY+J9bR/n2bqa601xbGQLbK8cXsfu4/SjqD4=
+|   256 0f:8d:0e:19:e9:c7:cc:14:39:e9:34:60:5c:f7:aa:fe (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINcfH8RQ/iANAMirzQDTd9DqQWtaRghdHwVVrAou0c+j
+80/tcp   open  http          syn-ack Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: POST OPTIONS GET HEAD
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+2222/tcp open  EtherNetIP-1? syn-ack
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, Kerberos, NULL, SSLSessionReq: 
+|     Welcome to the NoNameCTF!
+|     Choose an action:
+|     regiser: 1
+|     login: 2
+|     get_secret_directory: 3
+|     store_your_buffer: 4
+|   GetRequest, HTTPOptions, Help, RTSPRequest: 
+|     Welcome to the NoNameCTF!
+|     Choose an action:
+|     regiser: 1
+|     login: 2
+|     get_secret_directory: 3
+|     store_your_buffer: 4
+|     Wrong option
+|_    Good bye
+9090/tcp open  http          syn-ack Tornado httpd 6.0.3
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: TornadoServer/6.0.3
+|_http-title: Site doesn't have a title (text/plain).
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port2222-TCP:V=7.91%I=7%D=8/14%Time=6117C457%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,7B,"Welcome\x20to\x20the\x20NoNameCTF!\r\nChoose\x20an\x20action:\r\
+SF:n>\x20regiser:\x201\r\n>\x20login:\x202\r\n>\x20get_secret_directory:\x
+SF:203\r\n>\x20store_your_buffer:\x204\r\n")%r(GenericLines,7B,"Welcome\x2
+SF:0to\x20the\x20NoNameCTF!\r\nChoose\x20an\x20action:\r\n>\x20regiser:\x2
+SF:01\r\n>\x20login:\x202\r\n>\x20get_secret_directory:\x203\r\n>\x20store
+SF:_your_buffer:\x204\r\n")%r(GetRequest,93,"Welcome\x20to\x20the\x20NoNam
+SF:eCTF!\r\nChoose\x20an\x20action:\r\n>\x20regiser:\x201\r\n>\x20login:\x
+SF:202\r\n>\x20get_secret_directory:\x203\r\n>\x20store_your_buffer:\x204\
+SF:r\nWrong\x20option\r\nGood\x20bye\r\n")%r(HTTPOptions,93,"Welcome\x20to
+SF:\x20the\x20NoNameCTF!\r\nChoose\x20an\x20action:\r\n>\x20regiser:\x201\
+SF:r\n>\x20login:\x202\r\n>\x20get_secret_directory:\x203\r\n>\x20store_yo
+SF:ur_buffer:\x204\r\nWrong\x20option\r\nGood\x20bye\r\n")%r(RTSPRequest,9
+SF:3,"Welcome\x20to\x20the\x20NoNameCTF!\r\nChoose\x20an\x20action:\r\n>\x
+SF:20regiser:\x201\r\n>\x20login:\x202\r\n>\x20get_secret_directory:\x203\
+SF:r\n>\x20store_your_buffer:\x204\r\nWrong\x20option\r\nGood\x20bye\r\n")
+SF:%r(DNSVersionBindReqTCP,7B,"Welcome\x20to\x20the\x20NoNameCTF!\r\nChoos
+SF:e\x20an\x20action:\r\n>\x20regiser:\x201\r\n>\x20login:\x202\r\n>\x20ge
+SF:t_secret_directory:\x203\r\n>\x20store_your_buffer:\x204\r\n")%r(DNSSta
+SF:tusRequestTCP,7B,"Welcome\x20to\x20the\x20NoNameCTF!\r\nChoose\x20an\x2
+SF:0action:\r\n>\x20regiser:\x201\r\n>\x20login:\x202\r\n>\x20get_secret_d
+SF:irectory:\x203\r\n>\x20store_your_buffer:\x204\r\n")%r(Help,93,"Welcome
+SF:\x20to\x20the\x20NoNameCTF!\r\nChoose\x20an\x20action:\r\n>\x20regiser:
+SF:\x201\r\n>\x20login:\x202\r\n>\x20get_secret_directory:\x203\r\n>\x20st
+SF:ore_your_buffer:\x204\r\nWrong\x20option\r\nGood\x20bye\r\n")%r(SSLSess
+SF:ionReq,7B,"Welcome\x20to\x20the\x20NoNameCTF!\r\nChoose\x20an\x20action
+SF::\r\n>\x20regiser:\x201\r\n>\x20login:\x202\r\n>\x20get_secret_director
+SF:y:\x203\r\n>\x20store_your_buffer:\x204\r\n")%r(Kerberos,7B,"Welcome\x2
+SF:0to\x20the\x20NoNameCTF!\r\nChoose\x20an\x20action:\r\n>\x20regiser:\x2
+SF:01\r\n>\x20login:\x202\r\n>\x20get_secret_directory:\x203\r\n>\x20store
+SF:_your_buffer:\x204\r\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 14 18:57:53 2021 -- 1 IP address (1 host up) scanned in 137.72 seconds

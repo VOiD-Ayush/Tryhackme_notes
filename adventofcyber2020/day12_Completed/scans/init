@@ -1,0 +1,63 @@
+# Nmap 7.91 scan initiated Sun Jul 11 21:15:13 2021 as: nmap -sC -sV -vv -Pn -oN scans/init 10.10.231.247
+Nmap scan report for 10.10.231.247
+Host is up, received user-set (0.26s latency).
+Scanned at 2021-07-11 21:15:14 IST for 40s
+Not shown: 996 filtered ports
+Reason: 996 no-responses
+PORT     STATE SERVICE       REASON  VERSION
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: TBFC-WEB-01
+|   NetBIOS_Domain_Name: TBFC-WEB-01
+|   NetBIOS_Computer_Name: TBFC-WEB-01
+|   DNS_Domain_Name: tbfc-web-01
+|   DNS_Computer_Name: tbfc-web-01
+|   Product_Version: 10.0.17763
+|_  System_Time: 2021-07-11T15:45:50+00:00
+| ssl-cert: Subject: commonName=tbfc-web-01
+| Issuer: commonName=tbfc-web-01
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-07-10T15:17:43
+| Not valid after:  2022-01-09T15:17:43
+| MD5:   c1f9 3025 3f6a 1b78 58a4 c9d7 6af9 820b
+| SHA-1: 621b 26e9 6a3e 8ac7 95ad 1de8 6789 2d94 439a 4702
+| -----BEGIN CERTIFICATE-----
+| MIIC2jCCAcKgAwIBAgIQZqjOjIhBOa1HPSkg3uWWJjANBgkqhkiG9w0BAQsFADAW
+| MRQwEgYDVQQDEwt0YmZjLXdlYi0wMTAeFw0yMTA3MTAxNTE3NDNaFw0yMjAxMDkx
+| NTE3NDNaMBYxFDASBgNVBAMTC3RiZmMtd2ViLTAxMIIBIjANBgkqhkiG9w0BAQEF
+| AAOCAQ8AMIIBCgKCAQEA9S0CKoQTrTT5eQEPTCFAeWu8J1WiuqIEk79rtrj8x5Gv
+| 1o4Od3agmlQGwyQ13zDKb5RWn3oMnvV63dPLyIngfw/96dTWbsQY1bs+GFPBEUfQ
+| jv5zfaMim1xd1LR9E88M6B1dnv8RJ6Xb7S3mjU+PMg0NRnVLC9igtsU/3hh70wgP
+| BYbdROvg48/JfoPgy9pLU+a9vR6DKvAsYCfZ8/3PmzrQslF4XI2f2yVDYFLDSgYV
+| idWw9ZsWhoKEQnDJXpCXVdfGWiSaoP2gUQZ2vee/swVxArSLWBauCne+yT65izfK
+| r1Z6HLB1ygIsSq48jbJuTy8/kPBM6nqkhpd3EwWf5QIDAQABoyQwIjATBgNVHSUE
+| DDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAIaN
+| 8IbZMVx391LuQUFzcNKDsbs91W7+f8TUfzbCGDZtRTL4cn+tP6YT3XU6N9ET8ieh
+| EWw2eWI2a6lre3QeIxzsLstCHeHSZk7dzuQXveOryOI4nBtZaLMtR/lOn2nSonpU
+| eJBqo6vNipXuvQMKOkWZ62vn/MLjEV8oYckel9Wq7hlFdaYQu9zyeFJ8pbc7JLFw
+| IJf3+LxqiedHJlSmxHUfD8NjO1KoofoCC+qQtBaHkolp2cfuvjdf1i5l7I5Vgff2
+| H7ZvYBp9eC1DQ9J/KCOOfP1aB8044bn9S1JBsApgKZvjr3f/R5UKIM+gMCa8lXIe
+| iKwICm5Kj80NPEKkzq0=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-07-11T15:45:53+00:00; 0s from scanner time.
+5357/tcp open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+8009/tcp open  ajp13         syn-ack Apache Jserv (Protocol v1.3)
+| ajp-methods: 
+|_  Supported methods: GET HEAD POST OPTIONS
+8080/tcp open  http          syn-ack Apache Tomcat 9.0.17
+|_http-favicon: Apache Tomcat
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Apache Tomcat/9.0.17
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 11 21:15:54 2021 -- 1 IP address (1 host up) scanned in 41.14 seconds

@@ -1,0 +1,39 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.234.100/45kra24zxs28v3yd/
+[+] Method:                  GET
+[+] Threads:                 70
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,txt,js,css,php
+[+] Timeout:                 10s
+===============================================================
+2021/07/26 00:01:53 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 278]
+/.hta.html            (Status: 403) [Size: 278]
+/.hta.txt             (Status: 403) [Size: 278]
+/.hta.js              (Status: 403) [Size: 278]
+/.hta.css             (Status: 403) [Size: 278]
+/.hta.php             (Status: 403) [Size: 278]
+/.htpasswd.css        (Status: 403) [Size: 278]
+/.htaccess            (Status: 403) [Size: 278]
+/.htpasswd.php        (Status: 403) [Size: 278]
+/.htaccess.js         (Status: 403) [Size: 278]
+/.htaccess.css        (Status: 403) [Size: 278]
+/.htpasswd            (Status: 403) [Size: 278]
+/.htaccess.php        (Status: 403) [Size: 278]
+/.htpasswd.html       (Status: 403) [Size: 278]
+/.htpasswd.txt        (Status: 403) [Size: 278]
+/.htaccess.html       (Status: 403) [Size: 278]
+/.htpasswd.js         (Status: 403) [Size: 278]
+/.htaccess.txt        (Status: 403) [Size: 278]
+/administrator        (Status: 301) [Size: 339] [--> http://10.10.234.100/45kra24zxs28v3yd/administrator/]
+/index.html           (Status: 200) [Size: 418]                                                           
+/index.html           (Status: 200) [Size: 418]                                                           
+===============================================================
+2021/07/26 00:03:18 Finished
+===============================================================

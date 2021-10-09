@@ -1,0 +1,35 @@
+# Nmap 7.91 scan initiated Mon Sep  6 22:01:44 2021 as: nmap -sV -vv -sC -oN scans/init 10.10.232.178
+Nmap scan report for 10.10.232.178
+Host is up, received conn-refused (0.29s latency).
+Scanned at 2021-09-06 22:01:45 IST for 147s
+Not shown: 998 closed ports
+Reason: 998 conn-refused
+PORT     STATE SERVICE REASON  VERSION
+22/tcp   open  ssh?    syn-ack
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+9999/tcp open  abyss?  syn-ack
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 200 OK
+|     Date: Mon, 06 Sep 2021 16:33:08 GMT
+|     Content-Length: 0
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Date: Mon, 06 Sep 2021 16:33:05 GMT
+|     Content-Length: 0
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Date: Mon, 06 Sep 2021 16:33:06 GMT
+|_    Content-Length: 0
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9999-TCP:V=7.91%I=7%D=9/6%Time=613642BB%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,4B,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Mon,\x2006\x20Sep\x20202
+SF:1\x2016:33:05\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,4B
+SF:,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Mon,\x2006\x20Sep\x202021\x2016:33
+SF::06\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,4B,"HT
+SF:TP/1\.0\x20200\x20OK\r\nDate:\x20Mon,\x2006\x20Sep\x202021\x2016:33:08\
+SF:x20GMT\r\nContent-Length:\x200\r\n\r\n");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep  6 22:04:12 2021 -- 1 IP address (1 host up) scanned in 149.01 seconds

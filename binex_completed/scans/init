@@ -1,0 +1,63 @@
+# Nmap 7.91 scan initiated Sat Aug  7 13:13:33 2021 as: nmap -sC -sV -vv -oN scans/init 10.10.123.44
+Nmap scan report for 10.10.123.44
+Host is up, received conn-refused (0.20s latency).
+Scanned at 2021-08-07 13:13:33 IST for 40s
+Not shown: 997 closed ports
+Reason: 997 conn-refused
+PORT    STATE SERVICE     REASON  VERSION
+22/tcp  open  ssh         syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 3f:36:de:da:2f:c3:b7:78:6f:a9:25:d6:41:dd:54:69 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3OBXYJUrPGglNoKPhUcwp3YiZRy6qNTHdOmGsgzy5ll+GDY8zkoIsNiqdHSaDKXvO+9ix+dZNF9CtgRDrLhL6j2Bn4RI011xveUiTF6LO7PEsv5RYI7KueOXyaw8vahdf/CdV4RQXhefge6FIZqkvhDGQsid8F3e846kJ7FPZYAcwQ5Iapv9ae1+23OZcDLtdTDlQOZIyNaVmPu0XVjHYnvHsC5r/eX/wq9WzETDVzgANMwsWOeZmjH956z4hjL7K91KHeaMnRHeO/tln1Pk9EG1eGn4FHsD1/LdumWp0pHDUXwTJ7OwuuucnzuiLrx8jDr03bEu4kPKpkB0Bc1Kb
+|   256 d0:78:23:ee:f3:71:58:ae:e9:57:14:17:bb:e3:6a:ae (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJlazDOaT1mvebWCf/KbUSzgt3MCueCjEYz6Uf6tDyYG5H7HsVTbKbphLPJupB3gght1wmk+8BpQe8q4fa+1ZXQ=
+|   256 4c:de:f1:49:df:21:4f:32:ca:e6:8e:bc:6a:96:53:e5 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIdOXbBN4ecgx8K412W8m2fd7R6y7c0O9uXXFv+gLusY
+139/tcp open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn syn-ack Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+Service Info: Host: THM_EXPLOIT; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 2s, deviation: 0s, median: 1s
+| nbstat: NetBIOS name: THM_EXPLOIT, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   THM_EXPLOIT<00>      Flags: <unique><active>
+|   THM_EXPLOIT<03>      Flags: <unique><active>
+|   THM_EXPLOIT<20>      Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 51570/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 53707/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 24609/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 35717/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: thm_exploit
+|   NetBIOS computer name: THM_EXPLOIT\x00
+|   Domain name: \x00
+|   FQDN: thm_exploit
+|_  System time: 2021-08-07T07:44:09+00:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-08-07T07:44:09
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug  7 13:14:13 2021 -- 1 IP address (1 host up) scanned in 40.59 seconds

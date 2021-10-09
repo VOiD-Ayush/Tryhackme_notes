@@ -1,0 +1,79 @@
+# Nmap 7.91 scan initiated Thu Sep 30 13:40:46 2021 as: nmap -sV -vv -sC -p 22,53,80,139,445,1337 -oN scans/ports 10.10.171.110
+Nmap scan report for panda.thm (10.10.171.110)
+Host is up, received syn-ack (0.22s latency).
+Scanned at 2021-09-30 13:40:47 IST for 23s
+
+PORT     STATE SERVICE     REASON  VERSION
+22/tcp   open  ssh         syn-ack OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 af:ff:dd:8f:74:ef:1b:ea:3a:33:7c:df:a0:e8:35:08 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDiH45ooQcS3rZPspzaUhLRqmcKrG4wv+EOd5LU79/OZT99n/BDJoCjBuEQCzedwl74V+OlsDbrk5FpWibRZ0U90IWmcOWp+MG/UC48eAdi9SU9xjGHBbR4aBNPqCuTmptmm0eFrjEOHjn5j8eg7IEXo6+eIBEA2PF5BSheqieni05v7yiqM+VDDe6Mve/G3QEptXZRYBxd8OdnDWb1CzXBQSQ3kaeOAMf/iHtYJqgmfJKz25xm+s2zwUp8E9O3XRcqaO+75D+INLMyq36GPSnfY49DIe1eluMT/M7wXOkieq0HYmbo+BAGlkm/SW29X6rwGcCAj9V9eiC4qp2Z+7Xn
+|   256 b5:dc:77:c4:15:a4:b6:5e:f3:07:46:ad:90:ea:d6:59 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJwWlKtY6tlwf8eSdC6pt1bJKrCijffWul3hgTaR3wJep/SBE5Z9aAMjqR16zugL0br8ulcF4++u7B37RqxYSG0=
+|   256 a5:20:b4:a0:94:2a:27:f2:c9:ea:cb:09:f8:ab:f0:a6 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGHU0yukTuSXMmV0n+3DPb27oucQBOlYmkAleFZ3shV7
+53/tcp   open  domain      syn-ack ISC BIND 9.11.4-P2 (RedHat Enterprise Linux 7)
+| dns-nsid: 
+|_  bind.version: 9.11.4-P2-RedHat-9.11.4-9.P2.el7
+
+80/tcp   open  http        syn-ack Apache httpd 2.4.6 ((CentOS) PHP/5.6.40)
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.6.40
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+
+139/tcp  open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: SAMBA)
+445/tcp  open  netbios-ssn syn-ack Samba smbd 4.9.1 (workgroup: SAMBA)
+
+1337/tcp open  http        syn-ack nginx 1.16.1
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.16.1
+|_http-title: Register Today
+Service Info: Host: PANDA; OS: Linux; CPE: cpe:/o:redhat:enterprise_linux:7
+
+Host script results:
+|_clock-skew: mean: 1h20m15s, deviation: 2h18m34s, median: 14s
+| nbstat: NetBIOS name: PANDA, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   PANDA<00>            Flags: <unique><active>
+|   PANDA<03>            Flags: <unique><active>
+|   PANDA<20>            Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   SAMBA<00>            Flags: <group><active>
+|   SAMBA<1d>            Flags: <unique><active>
+|   SAMBA<1e>            Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 31742/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 53187/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 54898/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 39310/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.9.1)
+|   Computer name: panda
+|   NetBIOS computer name: PANDA\x00
+|   Domain name: \x00
+|   FQDN: panda
+|_  System time: 2021-09-30T04:11:16-04:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-09-30T08:11:16
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep 30 13:41:10 2021 -- 1 IP address (1 host up) scanned in 24.05 seconds

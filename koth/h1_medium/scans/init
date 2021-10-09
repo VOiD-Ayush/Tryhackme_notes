@@ -1,0 +1,162 @@
+# Nmap 7.91 scan initiated Mon Sep 20 00:23:44 2021 as: nmap -sV -vv -sC -oN scans/init 10.10.51.191
+Nmap scan report for 10.10.51.191
+Host is up, received syn-ack (1.1s latency).
+Scanned at 2021-09-20 00:23:45 IST for 270s
+Not shown: 985 filtered ports
+Reason: 985 no-responses
+PORT     STATE SERVICE       REASON  VERSION
+80/tcp   open  http          syn-ack Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: PhotoStore - Home
+81/tcp   open  http          syn-ack Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Network Monitor
+82/tcp   open  http          syn-ack Microsoft IIS httpd 10.0
+|_http-favicon: Unknown favicon MD5: C967A141ABFF1D6AB42CE7440E58128C
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+
+
+88/tcp   open  kerberos-sec  syn-ack Microsoft Windows Kerberos (server time: 2021-09-19 18:55:43Z)
+
+
+135/tcp  open  msrpc         syn-ack Microsoft Windows RPC
+
+
+139/tcp  open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+
+
+389/tcp  open  ldap          syn-ack Microsoft Windows Active Directory LDAP (Domain: troy.thm0., Site: Default-First-Site-Name)
+
+445/tcp  open  microsoft-ds? syn-ack
+464/tcp  open  kpasswd5?     syn-ack
+593/tcp  open  ncacn_http    syn-ack Microsoft Windows RPC over HTTP 1.0
+
+636/tcp  open  tcpwrapped    syn-ack
+3268/tcp open  ldap          syn-ack Microsoft Windows Active Directory LDAP (Domain: troy.thm0., Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped    syn-ack
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: TROY
+|   NetBIOS_Domain_Name: TROY
+|   NetBIOS_Computer_Name: TROY-DC
+|   DNS_Domain_Name: troy.thm
+|   DNS_Computer_Name: TROY-DC.troy.thm
+|   DNS_Tree_Name: troy.thm
+|   Product_Version: 10.0.17763
+|_  System_Time: 2021-09-19T18:57:23+00:00
+| ssl-cert: Subject: commonName=TROY-DC.troy.thm
+| Issuer: commonName=TROY-DC.troy.thm
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-09-18T18:22:53
+| Not valid after:  2022-03-20T18:22:53
+| MD5:   ee40 0f3a b7a9 2b45 c1ec e30c 1ed6 96b0
+| SHA-1: f0fd a02a 62e8 d52b bb06 f712 ff6f b5a3 255e 9dd2
+| -----BEGIN CERTIFICATE-----
+| MIIC5DCCAcygAwIBAgIQVHFPc35n8LxNdd8oGGJ2EDANBgkqhkiG9w0BAQsFADAb
+| MRkwFwYDVQQDExBUUk9ZLURDLnRyb3kudGhtMB4XDTIxMDkxODE4MjI1M1oXDTIy
+| MDMyMDE4MjI1M1owGzEZMBcGA1UEAxMQVFJPWS1EQy50cm95LnRobTCCASIwDQYJ
+| KoZIhvcNAQEBBQADggEPADCCAQoCggEBAKxEEYQStHeDOCDhljUJaYaD85DdESJ3
+| bWJvbg0xKqqk8srytI4Q6uw8JJXFqtvq/+7Q7nQx+cEpdFWIRz7Ow5dHQoZPWQOD
+| AR8XapzHsK/hyAiTP9Txd0KgnpVT4kAxIozznWvmxYiV8NWvcnIrkY+nkfi4y/C9
+| mecOUld+tEIqGAc79u1vAzX1ANrRXOK1RQzNcCZTBiFQVpi4n59Z6OSKVp4/uDLa
+| wNhpkIamUreV9Ji08RHrfwoxphjiUVqmIEK5FOMSX8S5mx7WOEL3rHVi1KFSTAbR
+| oOM73FXcgg77zgg0v++u6MzsgV6q56GvJaUOujl8P69my+JPHu/ySkECAwEAAaMk
+| MCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEB
+| CwUAA4IBAQAypzGobfm6hklVR+CcXxNHbbIfSoII9H4mLvAB0FttoDsfVJBbZBjb
+| G8qv/bbuDaGyOcHvh6Lwekv597HlxClNimsBrWRMxVJMOLezYKsZWHsXdS8MW+SE
+| 1wrukZnvsS0RdpvPZ6mY2tcXr3qiIyc+wQqNevJjSIfiuG3aLdqEqqROYZKzUtmq
+| E0L1XvH392S84hwAE59ASHeG41iDYn/ZsxAZdLsSEc7gUmm5MD4mFlk2qFDwqbtq
+| STtpQ88HClp0/76/fdlSy439F6dZYTKs1lzMzkruBMUdaMJMfBV9vLvA38Ok4+sa
+| kgae+nGtSMSklhV//AvMLf/MPX0u5kjb
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-09-19T18:58:03+00:00; -1s from scanner time.
+
+9999/tcp open  abyss?        syn-ack
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 200 OK
+|     Date: Sun, 19 Sep 2021 18:55:47 GMT
+|     Content-Length: 11
+|     Content-Type: text/plain; charset=utf-8
+|     jceggink
+|   GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Date: Sun, 19 Sep 2021 18:55:41 GMT
+|     Content-Length: 11
+|     Content-Type: text/plain; charset=utf-8
+|     jceggink
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Date: Sun, 19 Sep 2021 18:55:43 GMT
+|     Content-Length: 11
+|     Content-Type: text/plain; charset=utf-8
+|_    jceggink
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9999-TCP:V=7.91%I=7%D=9/20%Time=614787B0%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,80,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Sun,\x2019\x20Sep\x2020
+SF:21\x2018:55:41\x20GMT\r\nContent-Length:\x2011\r\nContent-Type:\x20text
+SF:/plain;\x20charset=utf-8\r\n\r\njceggink\x20\r\n")%r(HTTPOptions,80,"HT
+SF:TP/1\.0\x20200\x20OK\r\nDate:\x20Sun,\x2019\x20Sep\x202021\x2018:55:43\
+SF:x20GMT\r\nContent-Length:\x2011\r\nContent-Type:\x20text/plain;\x20char
+SF:set=utf-8\r\n\r\njceggink\x20\r\n")%r(FourOhFourRequest,80,"HTTP/1\.0\x
+SF:20200\x20OK\r\nDate:\x20Sun,\x2019\x20Sep\x202021\x2018:55:47\x20GMT\r\
+SF:nContent-Length:\x2011\r\nContent-Type:\x20text/plain;\x20charset=utf-8
+SF:\r\n\r\njceggink\x20\r\n")%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x
+SF:20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnectio
+SF:n:\x20close\r\n\r\n400\x20Bad\x20Request")%r(RTSPRequest,67,"HTTP/1\.1\
+SF:x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf
+SF:-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HT
+SF:TP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20cha
+SF:rset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SSL
+SF:SessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20t
+SF:ext/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x
+SF:20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20c
+SF:lose\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq,67,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\
+SF:nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Kerberos,67,"HTT
+SF:P/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20char
+SF:set=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(LPDS
+SF:tring,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/p
+SF:lain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Req
+SF:uest")%r(LDAPSearchReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConten
+SF:t-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n
+SF:400\x20Bad\x20Request");
+Service Info: Host: TROY-DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 28312/tcp): CLEAN (Timeout)
+|   Check 2 (port 61271/tcp): CLEAN (Timeout)
+|   Check 3 (port 32953/udp): CLEAN (Timeout)
+|   Check 4 (port 9679/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2021-09-19T18:57:24
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 20 00:28:15 2021 -- 1 IP address (1 host up) scanned in 270.55 seconds

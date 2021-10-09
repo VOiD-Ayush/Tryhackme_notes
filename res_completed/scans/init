@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Sat Aug  7 19:14:37 2021 as: nmap -sC -sV -vv -oN scans/init
+Read data files from: /usr/bin/../share/nmap
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Sat Aug  7 19:14:38 2021 -- 0 IP addresses (0 hosts up) scanned in 1.98 seconds

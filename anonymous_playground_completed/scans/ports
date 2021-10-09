@@ -1,0 +1,28 @@
+# Nmap 7.91 scan initiated Wed Jul 21 22:46:44 2021 as: nmap -sC -sV -vv -p 21,22,80 -oN scans/ports 10.10.24.246
+Nmap scan report for 10.10.24.246
+Host is up, received syn-ack (0.22s latency).
+Scanned at 2021-07-21 22:46:44 IST for 14s
+
+PORT   STATE  SERVICE REASON       VERSION
+21/tcp closed ftp     conn-refused
+22/tcp open   ssh     syn-ack      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 60:b6:ad:4c:3e:f9:d2:ec:8b:cd:3b:45:a5:ac:5f:83 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClu8XpXBiUw2g/nBt/VCfEYLS9n4kdaezLUivhTwOHhkpWu1/CVRlfjyAAWDFzuv/lFgPsqA9IYk9BQGIleQjfZ1RyEdLen0CdPmEE3pBSKvKgr+tdHtz9LSYX6WUZ2ji1vX1RUzOj5gM1tjNlqg53DipjHSiWS5XMC+Gmjgm+Tdaqi5RjxyHxxcD5LbEZT3rhK5anNnv93w03wq0wOb475KgYwmlUSQ7C5LgdtGPiUOFy5f6J4G9mznBRrlocKprxCTQywuVP6xc3FDMYzYDlAfgZrQqVUy9N69gqdycI5AqJv+ubx9ulAHyLCFG5S+vo8GGrEor/rle7ETLHlMWj
+|   256 6f:9a:be:df:fc:95:a2:31:8f:db:e5:a2:da:8a:0c:3c (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJ+wRuTZ27V4CxgVdb1LCsbpO2jPP3Nen/ABkVFgegXA2cUnpZEhD3lBBub2fIMl6P2XXJ0+rJD3n0HqQu6PYUI=
+|   256 e6:98:52:49:cf:f2:b8:65:d7:41:1c:83:2e:94:24:88 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO/maijr14RO05c5UzlXFjTmaqvRYDY2JyhvVbeBPC3R
+80/tcp open   http    syn-ack      Apache httpd 2.4.29 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: 533ABADAA92DA56EA5CB1FE4DAC5B47E
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/zYdHuAKjP
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Proving Grounds
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jul 21 22:46:58 2021 -- 1 IP address (1 host up) scanned in 14.70 seconds

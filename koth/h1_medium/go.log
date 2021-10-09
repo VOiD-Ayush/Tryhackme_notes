@@ -1,0 +1,8 @@
+/profile              (Status: 302) [Size: 0] [--> /login]
+/login                (Status: 200) [Size: 2783]
+/users                (Status: 301) [Size: 149] [--> http://10.10.51.191/users/]
+/signup               (Status: 200) [Size: 2903]
+/logout               (Status: 302) [Size: 0] [--> /]
+/script.js            (Status: 200) [Size: 142]
+/dashboard            (Status: 302) [Size: 0] [--> /login]
+/Users                (Status: 301) [Size: 149] [--> http://10.10.51.191/Users/]

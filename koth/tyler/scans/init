@@ -1,0 +1,140 @@
+# Nmap 7.91 scan initiated Wed Sep 22 18:59:05 2021 as: nmap -sV -vv -sC -oN scans/init 10.10.18.196
+Increasing send delay for 10.10.18.196 from 0 to 5 due to 39 out of 129 dropped probes since last increase.
+Increasing send delay for 10.10.18.196 from 5 to 10 due to 12 out of 39 dropped probes since last increase.
+Nmap scan report for 10.10.18.196
+Host is up, received syn-ack (0.20s latency).
+Scanned at 2021-09-22 18:59:06 IST for 144s
+Not shown: 992 closed ports
+Reason: 992 conn-refused
+PORT     STATE SERVICE     REASON  VERSION
+22/tcp   open  ssh         syn-ack OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 46:6c:5a:31:5f:c1:1f:f3:65:e7:64:f2:c5:f5:59:d8 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVhvZw9bOta3v/k3PPrCS57j0CaIKmFko9IRAes26Cj3GOnlWDI2hMNIn1HfOeW0AWw3LSATQF32UykxNj3V1yGjr6ocnN5EmqGJ8/UIGHq5IkOa6jbJ8uoSke2DytgbSHKjpwqXDHM6PcjMzPJXX/qCO053hvOAYr04+QsGsrRKlIK91oBfz/r1IHD7br1PHUsOCaJYYBg2dQax9r1RBUuG72z0TzMIVXrrCXLH3fqIsgNBpHogjLLlbbggrypvAYqTsO6qzfkSd0ZbSTL03qMhb8a2ZEUOc1xxjOJHvKfQ35mlVYQFFpitc+iRWs98GLjrxj5gRpm50w4JS4qcrl
+|   256 5d:a5:8a:af:1e:21:48:7a:04:22:3e:4a:f5:e4:5b:02 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOkVe/CncdzJ4/qBPR4udSPA1E7JItazj+q5aXcg4xQf6mR4SClQYJO+dSsB5WXm2vhzyGggVW27ZqUx4sP71CU=
+|   256 6a:44:1c:e1:15:c9:5e:94:da:06:8d:db:d2:bc:66:54 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIUGlj+93SUpHWMzbTrmXriMiRY9pKLszdYBu/3J1qf0
+80/tcp   open  http        syn-ack Apache httpd 2.4.6 ((CentOS) PHP/7.3.16)
+| http-methods: 
+|   Supported Methods: POST OPTIONS GET HEAD TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/7.3.16
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+139/tcp  open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: SAMBA)
+445/tcp  open  netbios-ssn syn-ack Samba smbd 4.9.1 (workgroup: SAMBA)
+3306/tcp open  mysql       syn-ack MariaDB (unauthorized)
+5000/tcp open  http        syn-ack Werkzeug httpd 1.0.0 (Python 3.6.8)
+| http-methods: 
+|_  Supported Methods: OPTIONS GET POST HEAD
+|_http-server-header: Werkzeug/1.0.0 Python/3.6.8
+|_http-title: Tyler's file upload
+8080/tcp open  http        syn-ack nginx 1.16.1
+|_http-favicon: Unknown favicon MD5: B8211E9B75068FB852BFB155D9A1A2EE
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: nginx/1.16.1
+| http-title: LibreNMS
+|_Requested resource was http://10.10.18.196:8080/login
+|_http-trane-info: Problem with XML parsing of /evox/about
+9999/tcp open  abyss?      syn-ack
+| fingerprint-strings: 
+|   FourOhFourRequest, HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Accept-Ranges: bytes
+|     Content-Length: 1
+|     Content-Type: text/plain; charset=utf-8
+|     Last-Modified: Thu, 26 Mar 2020 11:36:37 GMT
+|     Date: Wed, 22 Sep 2021 13:29:52 GMT
+|   GenericLines, Help, Kerberos, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Accept-Ranges: bytes
+|     Content-Length: 1
+|     Content-Type: text/plain; charset=utf-8
+|     Last-Modified: Thu, 26 Mar 2020 11:36:37 GMT
+|_    Date: Wed, 22 Sep 2021 13:29:51 GMT
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9999-TCP:V=7.91%I=7%D=9/22%Time=614B2FCE%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,B9,"HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20bytes\r\nConte
+SF:nt-Length:\x201\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nLas
+SF:t-Modified:\x20Thu,\x2026\x20Mar\x202020\x2011:36:37\x20GMT\r\nDate:\x2
+SF:0Wed,\x2022\x20Sep\x202021\x2013:29:51\x20GMT\r\n\r\n\n")%r(HTTPOptions
+SF:,B9,"HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20bytes\r\nContent-Lengt
+SF:h:\x201\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nLast-Modifi
+SF:ed:\x20Thu,\x2026\x20Mar\x202020\x2011:36:37\x20GMT\r\nDate:\x20Wed,\x2
+SF:022\x20Sep\x202021\x2013:29:52\x20GMT\r\n\r\n\n")%r(FourOhFourRequest,B
+SF:9,"HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20bytes\r\nContent-Length:
+SF:\x201\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nLast-Modified
+SF::\x20Thu,\x2026\x20Mar\x202020\x2011:36:37\x20GMT\r\nDate:\x20Wed,\x202
+SF:2\x20Sep\x202021\x2013:29:52\x20GMT\r\n\r\n\n")%r(GenericLines,67,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20chars
+SF:et=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(RTSPR
+SF:equest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/
+SF:plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Re
+SF:quest")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\
+SF:x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20B
+SF:ad\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20clos
+SF:e\r\n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x
+SF:20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-
+SF:8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionRe
+SF:q,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain
+SF:;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request
+SF:")%r(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:ntent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n
+SF:\r\n400\x20Bad\x20Request");
+Service Info: Host: TYLER
+
+Host script results:
+|_clock-skew: mean: 1h20m01s, deviation: 2h18m34s, median: 0s
+| nbstat: NetBIOS name: TYLER, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   TYLER<00>            Flags: <unique><active>
+|   TYLER<03>            Flags: <unique><active>
+|   TYLER<20>            Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   SAMBA<00>            Flags: <group><active>
+|   SAMBA<1d>            Flags: <unique><active>
+|   SAMBA<1e>            Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 40045/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 23367/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 54183/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 35041/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.9.1)
+|   Computer name: tyler
+|   NetBIOS computer name: TYLER\x00
+|   Domain name: \x00
+|   FQDN: tyler
+|_  System time: 2021-09-22T09:31:22-04:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-09-22T13:31:24
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Sep 22 19:01:30 2021 -- 1 IP address (1 host up) scanned in 144.29 seconds

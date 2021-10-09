@@ -1,0 +1,101 @@
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Sun Jul 11 20:10:13 2021
+
+ ========================== 
+|    Target Information    |
+ ========================== 
+Target ........... 10.10.26.19
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+ =================================================== 
+|    Enumerating Workgroup/Domain on 10.10.26.19    |
+ =================================================== 
+[+] Got domain/workgroup name: TBFC-SMB-01
+
+ ==================================== 
+|    Session Check on 10.10.26.19    |
+ ==================================== 
+[+] Server 10.10.26.19 allows sessions using username '', password ''
+
+ ========================================== 
+|    Getting domain SID for 10.10.26.19    |
+ ========================================== 
+Domain Name: TBFC-SMB-01
+Domain Sid: (NULL SID)
+[+] Can't determine if host is part of domain or part of a workgroup
+
+ ============================ 
+|    Users on 10.10.26.19    |
+ ============================ 
+index: 0x1 RID: 0x3e8 acb: 0x00000010 Account: elfmcskidy	Name: 	Desc: 
+index: 0x2 RID: 0x3ea acb: 0x00000010 Account: elfmceager	Name: elfmceager	Desc: 
+index: 0x3 RID: 0x3e9 acb: 0x00000010 Account: elfmcelferson	Name: 	Desc: 
+
+user:[elfmcskidy] rid:[0x3e8]
+user:[elfmceager] rid:[0x3ea]
+user:[elfmcelferson] rid:[0x3e9]
+
+ ======================================== 
+|    Share Enumeration on 10.10.26.19    |
+ ======================================== 
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	tbfc-hr         Disk      tbfc-hr
+	tbfc-it         Disk      tbfc-it
+	tbfc-santa      Disk      tbfc-santa
+	IPC$            IPC       IPC Service (tbfc-smb server (Samba, Ubuntu))
+SMB1 disabled -- no workgroup available
+
+[+] Attempting to map shares on 10.10.26.19
+//10.10.26.19/tbfc-hr	Mapping: DENIED, Listing: N/A
+//10.10.26.19/tbfc-it	Mapping: DENIED, Listing: N/A
+//10.10.26.19/tbfc-santa	Mapping: OK, Listing: OK
+//10.10.26.19/IPC$	[E] Can't understand response:
+NT_STATUS_OBJECT_NAME_NOT_FOUND listing \*
+
+ =================================================== 
+|    Password Policy Information for 10.10.26.19    |
+ =================================================== 
+
+
+[+] Attaching to 10.10.26.19 using a NULL share
+
+[+] Trying protocol 139/SMB...
+
+[+] Found domain(s):
+
+	[+] TBFC-SMB
+	[+] Builtin
+
+[+] Password Info for Domain: TBFC-SMB
+
+	[+] Minimum password length: 5
+	[+] Password history length: None
+	[+] Maximum password age: 37 days 6 hours 21 minutes 
+	[+] Password Complexity Flags: 000000
+
+		[+] Domain Refuse Password Change: 0
+		[+] Domain Password Store Cleartext: 0
+		[+] Domain Password Lockout Admins: 0
+		[+] Domain Password No Clear Change: 0
+		[+] Domain Password No Anon Change: 0
+		[+] Domain Password Complex: 0
+
+	[+] Minimum password age: None
+	[+] Reset Account Lockout Counter: 30 minutes 
+	[+] Locked Account Duration: 30 minutes 
+	[+] Account Lockout Threshold: None
+	[+] Forced Log off Time: 37 days 6 hours 21 minutes 
+
+
+[+] Retieved partial password policy with rpcclient:
+
+Password Complexity: Disabled
+Minimum Password Length: 5
+
+enum4linux complete on Sun Jul 11 20:10:59 2021
+

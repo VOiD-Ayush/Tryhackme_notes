@@ -1,0 +1,31 @@
+# Nmap 7.91 scan initiated Mon Jul 12 20:21:42 2021 as: nmap -sC -sV -vv -oN scans/init 10.10.209.136
+Increasing send delay for 10.10.209.136 from 0 to 5 due to 40 out of 131 dropped probes since last increase.
+Nmap scan report for 10.10.209.136
+Host is up, received syn-ack (0.20s latency).
+Scanned at 2021-07-12 20:21:43 IST for 47s
+Not shown: 998 closed ports
+Reason: 998 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 f9:14:0a:5b:19:0c:4a:e9:3a:12:d9:2c:6c:7f:76:d5 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCoTfhWh1P9rInXRGWKwzYGhedg6kVPFzi/bi5dU2Ey2CQdeswgwuSv2rNSuOEYU+IU3+F+T3QwsMtUqEHgjtEAJtrS79cNYiKbkZ/tKYhoMFKcebhjGDKfCeesIjt/g0kd9mY41o9GRL0IY/XLbWlAUI18c8X9FWxRJqIk382OBgyJp0OOlInm1V+9o9Xq8zCjcJNhyOZ17zeva6tcfv5r5uzEM/GqKmlhVPOF3KTGT4LbrsqDncmSIQ3acv8gnmPisMt/CFLtf9sKETNM0burfcDDDE4TBFFSXgwkBwd3p3zp/+1EeIjFX86Z5Ctpb6uD1j+yrBTSQzRp87aoQCvp
+|   256 cf:ee:bb:bd:3b:1c:90:0b:a7:bd:79:7c:4f:a2:3e:1e (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBSY3O12plP/fQl8VsyqEDzLO/hiOdfcVVnqJv2C9/inBcRIai5uHrsLK3OZtjkIZ6tlSI8+ox5me28HhL25glY=
+|   256 d7:27:b9:e0:0f:c4:a8:ef:83:20:d1:ae:c2:cb:5a:57 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKNfVl6cYUmS65/TlXS05g8gdzlgb09NpZoaSvSB2hnx
+80/tcp open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-title: Welcome to LapLANd!
+|_Requested resource was register.php
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 12 20:22:30 2021 -- 1 IP address (1 host up) scanned in 47.79 seconds

@@ -1,0 +1,5 @@
+/img                  (Status: 301) [Size: 169] [--> http://10.10.171.110:1337/img/]
+/index.html           (Status: 200) [Size: 5808]
+/index.html           (Status: 200) [Size: 5808]
+/js                   (Status: 301) [Size: 169] [--> http://10.10.171.110:1337/js/]
+/process.php          (Status: 200) [Size: 30]

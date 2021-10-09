@@ -1,0 +1,25 @@
+# Nmap 7.91 scan initiated Tue Jul 13 10:56:42 2021 as: nmap -sC -sV -vv -oN scans/init 10.10.22.77
+Increasing send delay for 10.10.22.77 from 0 to 5 due to 47 out of 156 dropped probes since last increase.
+Nmap scan report for 10.10.22.77
+Host is up, received conn-refused (0.26s latency).
+Scanned at 2021-07-13 10:56:44 IST for 123s
+Not shown: 998 closed ports
+Reason: 998 conn-refused
+PORT      STATE SERVICE REASON  VERSION
+80/tcp    open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+65000/tcp open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Light Cycle
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 13 10:58:47 2021 -- 1 IP address (1 host up) scanned in 124.38 seconds
