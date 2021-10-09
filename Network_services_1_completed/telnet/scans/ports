@@ -1,0 +1,1 @@
+# Nmap 7.91 scan initiated Mon Jul 26 13:03:21 2021 as: nmap -sC -sV -vv -p 21,22,80,139,445,8012 -oN scans/ports 10.10.39.53

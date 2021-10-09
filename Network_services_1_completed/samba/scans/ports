@@ -1,0 +1,65 @@
+# Nmap 7.91 scan initiated Mon Jul 26 11:49:19 2021 as: nmap -sC -sV -vv -p 21,22,80,139,445,110 -oN scans/ports 10.10.78.233
+Nmap scan report for 10.10.78.233
+Host is up, received conn-refused (0.29s latency).
+Scanned at 2021-07-26 11:49:20 IST for 21s
+
+PORT    STATE  SERVICE     REASON       VERSION
+21/tcp  closed ftp         conn-refused
+22/tcp  open   ssh         syn-ack      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 91:df:5c:7c:26:22:6e:90:23:a7:7d:fa:5c:e1:c2:52 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsQBsFkx22xGvnoVM2jdoshYhErSrOah7KuFFxx17bNXpP0ngmmi8eg8cF15/W09dFRZkHpolm+hwczAJg8YtCikckf57z6tuMZIJG97TEFjtevvyw2hB7YjUJXCsQOkGKUkHs8q1QqiTX0jFaM/LQdZm+77MxuaU8XXbcghfHISAyh2++AwD6LIIJvVKk/1vjMHO6GtgoyvVmlVrITZv+5naaAUgfyqoKJr2mfsJDl8MpalE4Fb9aXP2LopBgQ5YetpjFI4kyvxlaZZ86nrvvCc5FZWXM5ezfJT1R8fIaM8+3rY/6ktlVzQ/C3fNqJaT9YolYOYcQuHZ1mJ7rrE0P
+|   256 86:57:f5:2a:f7:86:9c:cf:02:c1:ac:bc:34:90:6b:01 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCdRH8y2bhSww6mxtO3NwyfVfbhPCFZ8RxKhZrmc4LoqyRvJhmISqcY/e9JmkvjeqFx+QLGsadZo3ap9QyVuDAE=
+|   256 81:e3:cc:e7:c9:3c:75:d7:fb:e0:86:a0:01:41:77:81 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBOdFR83uui/AaLq3bUcJ0REIIL0laVVmSMvkeVpGWd1
+80/tcp  closed http        conn-refused
+110/tcp closed pop3        conn-refused
+139/tcp open   netbios-ssn syn-ack      Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open   netbios-ssn syn-ack      Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+Service Info: Host: POLOSMB; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 4s, deviation: 0s, median: 4s
+| nbstat: NetBIOS name: POLOSMB, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   POLOSMB<00>          Flags: <unique><active>
+|   POLOSMB<03>          Flags: <unique><active>
+|   POLOSMB<20>          Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 16822/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 26610/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 13619/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 41029/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: polosmb
+|   NetBIOS computer name: POLOSMB\x00
+|   Domain name: \x00
+|   FQDN: polosmb
+|_  System time: 2021-07-26T06:19:38+00:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-07-26T06:19:39
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 26 11:49:41 2021 -- 1 IP address (1 host up) scanned in 21.74 seconds

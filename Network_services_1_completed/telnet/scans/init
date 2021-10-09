@@ -1,0 +1,8 @@
+# Nmap 7.91 scan initiated Mon Jul 26 13:05:07 2021 as: nmap -sC -sV -vv -oN scans/init 10.10.39.53
+Nmap scan report for 10.10.39.53
+Host is up, received conn-refused (0.23s latency).
+All 1000 scanned ports on 10.10.39.53 are closed because of 1000 conn-refused
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 26 13:05:41 2021 -- 1 IP address (1 host up) scanned in 33.74 seconds

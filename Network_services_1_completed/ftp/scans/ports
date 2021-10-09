@@ -1,0 +1,32 @@
+# Nmap 7.91 scan initiated Mon Jul 26 13:32:20 2021 as: nmap -sC -sV -vv -p 21,22,80,139,445,8012 -oN scans/ports 10.10.110.195
+Nmap scan report for 10.10.110.195
+Host is up, received conn-refused (0.31s latency).
+Scanned at 2021-07-26 13:32:21 IST for 17s
+
+PORT     STATE  SERVICE      REASON       VERSION
+21/tcp   open   ftp          syn-ack      vsftpd 2.0.8 or later
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 0        0             353 Apr 24  2020 PUBLIC_NOTICE.txt
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.17.6.109
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 3
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp   closed ssh          conn-refused
+80/tcp   closed http         conn-refused
+139/tcp  closed netbios-ssn  conn-refused
+445/tcp  closed microsoft-ds conn-refused
+8012/tcp closed unknown      conn-refused
+Service Info: Host: Welcome
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul 26 13:32:38 2021 -- 1 IP address (1 host up) scanned in 17.98 seconds
