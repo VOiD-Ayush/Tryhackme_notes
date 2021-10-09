@@ -1,0 +1,53 @@
+# Nmap 7.91 scan initiated Thu Aug  5 12:00:29 2021 as: nmap -sC -sV -vv -Pn -oN scans/init 10.10.6.123
+Nmap scan report for 10.10.6.123
+Host is up, received user-set (0.22s latency).
+Scanned at 2021-08-05 12:00:31 IST for 36s
+Not shown: 998 filtered ports
+Reason: 998 no-responses
+PORT     STATE SERVICE            REASON  VERSION
+80/tcp   open  http               syn-ack Microsoft IIS httpd 8.5
+| http-methods: 
+|   Supported Methods: GET HEAD OPTIONS TRACE POST
+|_  Potentially risky methods: TRACE
+| http-robots.txt: 6 disallowed entries 
+| /Account/*.* /search /search.aspx /error404.aspx 
+|_/archive /archive.aspx
+|_http-server-header: Microsoft-IIS/8.5
+|_http-title: hackpark | hackpark amusements
+3389/tcp open  ssl/ms-wbt-server? syn-ack
+| ssl-cert: Subject: commonName=hackpark
+| Issuer: commonName=hackpark
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2021-08-04T06:27:23
+| Not valid after:  2022-02-03T06:27:23
+| MD5:   5775 f3cd e81c fae0 fc19 2e9e 6baf fdd4
+| SHA-1: 778a b6e5 28a6 7a4a 0724 8ae2 cd4f 83c1 44d3 659b
+| -----BEGIN CERTIFICATE-----
+| MIIC1DCCAbygAwIBAgIQGVsa3IGvh55M9WpOfP1xEDANBgkqhkiG9w0BAQUFADAT
+| MREwDwYDVQQDEwhoYWNrcGFyazAeFw0yMTA4MDQwNjI3MjNaFw0yMjAyMDMwNjI3
+| MjNaMBMxETAPBgNVBAMTCGhhY2twYXJrMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+| MIIBCgKCAQEAx5aH6L6cSjExm3O9jYLrbb7EE/SPRWJBk00b89EshaB/Wti444wx
+| BcJhhjajobd8cSwBEmcBg+8dBE+01iQQaBsIBAo0EIn6nQPMxT9jl09jlhERHJwY
+| JqeRZHCdSHIC0ZF063A2ttqGYy3sV951SJZ/CWF46HbmH2SjioxtDG5mXZNM0vpI
+| dcWbsNG/YFby0+xuPDePZpAWLH1cuHpNvynU1oF+BrsoX5LzKpHsBXZcUJYu0Zrc
+| y2gW7oWOy0YLeK5pbs2cdaVtZFot7W09UjAi3rwhDg1HtR5UNaJLc8nitkzkmX6F
+| lB8dDDi+Lap5BKUBTV0xA3yKqh4/29/iewIDAQABoyQwIjATBgNVHSUEDDAKBggr
+| BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQEFBQADggEBAAdXFucPKCb+
+| UWwIJiHA974EqwNVqZbaKCajIRpvx92jlS7S95p7zgbVZNYmJ2ltSdP2uaTK9pba
+| ouK/Bz44/LW6rBiu76zYmrOo9d7rObA/9nPPkMll+jRZCCYK7Cy1Xx1SEZNhEjmO
+| q8c1LQMY/BWY3Fhty/9nbIsuVVB3LTAEV2IEL5a5b2fhNT1K5ho52ZaTAXwSOGyN
+| rHIUhZRWlwPymVpP/y49O9bo0nRdwHT390asmda7t3VUPLDt6ELM5nZZf5qbADnE
+| wqbRmYWhHcUI6umTPcfdB9rE8H9QP0XqjEvmRZ5AyPqA3qapWF01X9eyVHNOxjUC
+| eVLz2nDP7B0=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-08-05T06:31:09+00:00; +3s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 2s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug  5 12:01:07 2021 -- 1 IP address (1 host up) scanned in 37.26 seconds

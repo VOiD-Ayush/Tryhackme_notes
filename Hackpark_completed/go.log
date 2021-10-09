@@ -1,0 +1,158 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.6.123/
+[+] Method:                  GET
+[+] Threads:                 70
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,txt,js,css,php
+[+] Timeout:                 10s
+===============================================================
+2021/08/05 12:03:55 Starting gobuster in directory enumeration mode
+===============================================================
+/account              (Status: 301) [Size: 150] [--> http://10.10.6.123/account/]
+/Admin                (Status: 302) [Size: 171] [--> http://10.10.6.123/Account/login.aspx?ReturnURL=/Admin]
+/ADMIN                (Status: 302) [Size: 171] [--> http://10.10.6.123/Account/login.aspx?ReturnURL=/ADMIN]
+/admin                (Status: 302) [Size: 171] [--> http://10.10.6.123/Account/login.aspx?ReturnURL=/admin]
+/archive              (Status: 200) [Size: 8299]                                                            
+/Archive              (Status: 200) [Size: 8299]                                                            
+/archives             (Status: 200) [Size: 8300]                                                            
+/aux.html             (Status: 500) [Size: 1763]                                                            
+/aux.txt              (Status: 500) [Size: 1763]                                                            
+/aux.js               (Status: 500) [Size: 1763]                                                            
+/aux.css              (Status: 500) [Size: 1763]                                                            
+/aspnet_client        (Status: 301) [Size: 156] [--> http://10.10.6.123/aspnet_client/]                     
+/aux.php              (Status: 500) [Size: 1763]                                                            
+/aux                  (Status: 500) [Size: 1763]                                                            
+/Blog                 (Status: 500) [Size: 1208]                                                            
+/blog                 (Status: 500) [Size: 1208]                                                            
+/com1.js              (Status: 500) [Size: 1763]                                                            
+/com2.html            (Status: 500) [Size: 1763]                                                            
+/com3.php             (Status: 500) [Size: 1763]                                                            
+/com2.txt             (Status: 500) [Size: 1763]                                                            
+/com1.css             (Status: 500) [Size: 1763]                                                            
+/com3                 (Status: 500) [Size: 1763]                                                            
+/com2.js              (Status: 500) [Size: 1763]                                                            
+/com1.php             (Status: 500) [Size: 1763]                                                            
+/com3.html            (Status: 500) [Size: 1763]                                                            
+/com2.css             (Status: 500) [Size: 1763]                                                            
+/com3.txt             (Status: 500) [Size: 1763]                                                            
+/com1.html            (Status: 500) [Size: 1763]                                                            
+/com2                 (Status: 500) [Size: 1763]                                                            
+/com3.js              (Status: 500) [Size: 1763]                                                            
+/com1                 (Status: 500) [Size: 1763]                                                            
+/con.js               (Status: 500) [Size: 1763]                                                            
+/com2.php             (Status: 500) [Size: 1763]                                                            
+/com3.css             (Status: 500) [Size: 1763]                                                            
+/com1.txt             (Status: 500) [Size: 1763]                                                            
+/con.css              (Status: 500) [Size: 1763]                                                            
+/contact_us           (Status: 200) [Size: 9912]                                                            
+/ContactUs            (Status: 200) [Size: 9911]                                                            
+/contact              (Status: 200) [Size: 9909]                                                            
+/contacto             (Status: 200) [Size: 9910]                                                            
+/contactinfo          (Status: 200) [Size: 9913]                                                            
+/con.php              (Status: 500) [Size: 1763]                                                            
+/contact-us           (Status: 200) [Size: 9912]                                                            
+/contact-form         (Status: 200) [Size: 9914]                                                            
+/con.html             (Status: 500) [Size: 1763]                                                            
+/contact_bean         (Status: 200) [Size: 9914]                                                            
+/con.txt              (Status: 500) [Size: 1763]                                                            
+/content              (Status: 301) [Size: 150] [--> http://10.10.6.123/content/]                           
+/con                  (Status: 500) [Size: 1763]                                                            
+/Content              (Status: 301) [Size: 150] [--> http://10.10.6.123/Content/]                           
+/contactus            (Status: 200) [Size: 9911]                                                            
+/Contact              (Status: 200) [Size: 9909]                                                            
+/contacts             (Status: 200) [Size: 9910]                                                            
+/custom               (Status: 301) [Size: 149] [--> http://10.10.6.123/custom/]                            
+/Default              (Status: 500) [Size: 1763]                                                            
+/default_icon.php     (Status: 500) [Size: 1763]                                                            
+/default_image.js     (Status: 500) [Size: 1763]                                                            
+/default              (Status: 500) [Size: 1763]                                                            
+/default_logo.css     (Status: 500) [Size: 1763]                                                            
+/default_page.php     (Status: 500) [Size: 1763]                                                            
+/defaults             (Status: 500) [Size: 1763]                                                            
+/default_pages        (Status: 500) [Size: 1763]                                                            
+/default_image        (Status: 500) [Size: 1763]                                                            
+/Default.txt          (Status: 500) [Size: 1763]                                                            
+/default_icon.html    (Status: 500) [Size: 1763]                                                            
+/default.js           (Status: 500) [Size: 1763]                                                            
+/default_logo         (Status: 500) [Size: 1763]                                                            
+/default_page         (Status: 500) [Size: 1763]                                                            
+/defaults.html        (Status: 500) [Size: 1763]                                                            
+/default_pages.html   (Status: 500) [Size: 1763]                                                            
+/default_image.css    (Status: 500) [Size: 1763]                                                            
+/Default.js           (Status: 500) [Size: 1763]                                                            
+/default_icon.txt     (Status: 500) [Size: 1763]                                                            
+/default.css          (Status: 500) [Size: 1763]                                                            
+/default_logo.php     (Status: 500) [Size: 1763]                                                            
+/default_page.html    (Status: 500) [Size: 1763]                                                            
+/defaults.txt         (Status: 500) [Size: 1763]                                                            
+/default_pages.txt    (Status: 500) [Size: 1763]                                                            
+/Default.css          (Status: 500) [Size: 1763]                                                            
+/default_image.php    (Status: 500) [Size: 1763]                                                            
+/default.php          (Status: 500) [Size: 1763]                                                            
+/default_icon         (Status: 500) [Size: 1763]                                                            
+/default_logo.html    (Status: 500) [Size: 1763]                                                            
+/default_page.txt     (Status: 500) [Size: 1763]                                                            
+/default_pages.js     (Status: 500) [Size: 1763]                                                            
+/defaults.js          (Status: 500) [Size: 1763]                                                            
+/Default.php          (Status: 500) [Size: 1763]                                                            
+/default_image.html   (Status: 500) [Size: 1763]                                                            
+/default.html         (Status: 500) [Size: 1763]                                                            
+/default_logo.txt     (Status: 500) [Size: 1763]                                                            
+/default_icon.js      (Status: 500) [Size: 1763]                                                            
+/default_page.js      (Status: 500) [Size: 1763]                                                            
+/defaults.css         (Status: 500) [Size: 1763]                                                            
+/default_pages.css    (Status: 500) [Size: 1763]                                                            
+/Default.html         (Status: 500) [Size: 1763]                                                            
+/default_image.txt    (Status: 500) [Size: 1763]                                                            
+/default.txt          (Status: 500) [Size: 1763]                                                            
+/default_logo.js      (Status: 500) [Size: 1763]                                                            
+/default_icon.css     (Status: 500) [Size: 1763]                                                            
+/default_page.css     (Status: 500) [Size: 1763]                                                            
+/default_pages.php    (Status: 500) [Size: 1763]                                                            
+/defaults.php         (Status: 500) [Size: 1763]                                                            
+/fonts                (Status: 301) [Size: 148] [--> http://10.10.6.123/fonts/]                             
+/lpt1.css             (Status: 500) [Size: 1763]                                                            
+/lpt2.html            (Status: 500) [Size: 1763]                                                            
+/lpt2.txt             (Status: 500) [Size: 1763]                                                            
+/lpt1.php             (Status: 500) [Size: 1763]                                                            
+/lpt2.js              (Status: 500) [Size: 1763]                                                            
+/lpt1                 (Status: 500) [Size: 1763]                                                            
+/lpt2.css             (Status: 500) [Size: 1763]                                                            
+/lpt1.html            (Status: 500) [Size: 1763]                                                            
+/lpt1.txt             (Status: 500) [Size: 1763]                                                            
+/lpt2.php             (Status: 500) [Size: 1763]                                                            
+/lpt2                 (Status: 500) [Size: 1763]                                                            
+/lpt1.js              (Status: 500) [Size: 1763]                                                            
+/nul                  (Status: 500) [Size: 1763]                                                            
+/nul.html             (Status: 500) [Size: 1763]                                                            
+/nul.txt              (Status: 500) [Size: 1763]                                                            
+/nul.js               (Status: 500) [Size: 1763]                                                            
+/nul.css              (Status: 500) [Size: 1763]                                                            
+/nul.php              (Status: 500) [Size: 1763]                                                            
+/prn                  (Status: 500) [Size: 1763]                                                            
+/prn.js               (Status: 500) [Size: 1763]                                                            
+/prn.css              (Status: 500) [Size: 1763]                                                            
+/prn.php              (Status: 500) [Size: 1763]                                                            
+/prn.html             (Status: 500) [Size: 1763]                                                            
+/prn.txt              (Status: 500) [Size: 1763]                                                            
+/robots.txt           (Status: 200) [Size: 303]                                                             
+/robots.txt           (Status: 200) [Size: 303]                                                             
+/scripts              (Status: 301) [Size: 150] [--> http://10.10.6.123/scripts/]                           
+/search               (Status: 200) [Size: 8381]                                                            
+/search-results       (Status: 200) [Size: 8389]                                                            
+/searchurl            (Status: 200) [Size: 8384]                                                            
+/Search               (Status: 200) [Size: 8381]                                                            
+/searchnx             (Status: 200) [Size: 8383]                                                            
+/Scripts              (Status: 301) [Size: 150] [--> http://10.10.6.123/Scripts/]                           
+/search_results       (Status: 200) [Size: 8389]                                                            
+/search_result        (Status: 200) [Size: 8388]                                                            
+/searchresults        (Status: 200) [Size: 8388]                                                            
+/setup                (Status: 302) [Size: 173] [--> http://10.10.6.123/Account/login.aspx?ReturnUrl=%2fsetup]
+===============================================================
+2021/08/05 12:05:24 Finished
+===============================================================

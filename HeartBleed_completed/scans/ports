@@ -1,0 +1,68 @@
+# Nmap 7.91 scan initiated Mon Aug  9 22:30:16 2021 as: nmap -sC -sV -vv -p 22,111,443 -oN scans/ports 63.32.168.80
+Nmap scan report for ec2-63-32-168-80.eu-west-1.compute.amazonaws.com (63.32.168.80)
+Host is up, received syn-ack (0.23s latency).
+Scanned at 2021-08-09 22:30:16 IST for 25s
+
+PORT    STATE SERVICE  REASON  VERSION
+22/tcp  open  ssh      syn-ack OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 2c:a5:b1:eb:37:66:5d:f9:b7:fa:76:3c:a5:f4:9a:01 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxOaVuNRJ1ymXIkm2DYsxOhOW+8EXwicOh1Dc3bFAWg5brlyh+EYEuX+esYtnQV1RcOVetP72eplWM3plKB9xJb/49fZ6zGIyIU2Ok42YurK0zbvPIDOMfkryPf95HxBKgVB2/pdJfRbe8FJQ03LFJEi+7+VZBYd0cSQVDyXG7GcxzKSz6nJaCYGt0Ytz07o20O9TMUbqjhKxvW0iY+6oJxbteHOibnqvujYLzs9WqGXqQNggEDjkjbCSBByp6K4a4NC3n2J7fNXOapHRvyVXTUISXHNeJcH5cCANwgQOIMsndP4kAT3/hBpZseaAv7NqvvpWjqroclAm9zuNwSPgr
+|   256 3c:33:fc:04:54:1b:c6:8c:a9:a0:d5:1a:d3:45:da:3f (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJ7zGYYZM1gxHcFOkmECicooP7h6GnENoOSAIdTa1M+6IKIuxIRTIbi8cqH4xd7tcNyHp4+sQlS+WNj3Wpo1p5k=
+|   256 0c:9d:cd:90:6e:c2:94:b9:4b:e1:69:eb:70:44:4b:f9 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDCtzEfxnTsV/nTAj1286kYdUvRKx+rNs4fYBS1DdZ4c
+111/tcp open  rpcbind  syn-ack 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          33640/udp   status
+|   100024  1          41702/udp6  status
+|   100024  1          53607/tcp6  status
+|_  100024  1          59407/tcp   status
+443/tcp open  ssl/http syn-ack nginx 1.15.7
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.15.7
+|_http-title: What are you looking for?
+| ssl-cert: Subject: commonName=localhost/organizationName=TryHackMe/stateOrProvinceName=London/countryName=UK/localityName=London/organizationalUnitName=TryHackMe
+| Issuer: commonName=localhost/organizationName=TryHackMe/stateOrProvinceName=London/countryName=UK/localityName=London/organizationalUnitName=TryHackMe
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2019-02-16T10:41:14
+| Not valid after:  2020-02-16T10:41:14
+| MD5:   4b3a f45e a597 6f3f 06f6 e9d2 518a c1c4
+| SHA-1: 01e8 fa58 e5a0 5102 d9e3 2ee3 8212 9d28 3934 4d57
+| -----BEGIN CERTIFICATE-----
+| MIIDqTCCApGgAwIBAgIJANbrflfhzmNCMA0GCSqGSIb3DQEBCwUAMGsxCzAJBgNV
+| BAYTAlVLMQ8wDQYDVQQIDAZMb25kb24xDzANBgNVBAcMBkxvbmRvbjESMBAGA1UE
+| CgwJVHJ5SGFja01lMRIwEAYDVQQLDAlUcnlIYWNrTWUxEjAQBgNVBAMMCWxvY2Fs
+| aG9zdDAeFw0xOTAyMTYxMDQxMTRaFw0yMDAyMTYxMDQxMTRaMGsxCzAJBgNVBAYT
+| AlVLMQ8wDQYDVQQIDAZMb25kb24xDzANBgNVBAcMBkxvbmRvbjESMBAGA1UECgwJ
+| VHJ5SGFja01lMRIwEAYDVQQLDAlUcnlIYWNrTWUxEjAQBgNVBAMMCWxvY2FsaG9z
+| dDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKNPQRA9EuSt88yrnnbi
+| 0GxKE2L9E5cR0VocQNqXEyjKcGgAMgngP+4FtCc3+SkZ3MBoHcSk7NfcZtG7asYO
+| 8uhcWYe8OjrGQxayAvu3+Et+93IhiTfAj2J+rPZ39vH0/BrHFx8jVty5buV65/Sp
+| gIvPLoOTJMoSbITIRAuWbz6dUkrwplY54BPoCisG7OF6LUEFw5Mk2AvbGz3cViW2
+| Aoh+/LoU7/b4PY3MUMXMaJ+BP+no381UgsWY3Z25vQ0FDhoAIu1UGP9UwzPYhi67
+| giuaYxTcJ+C+RQClFCEh/CWOhAlFpiv5jPoMb+MydSqfNYGbZnVCUOtyOrzddqVz
+| UFkCAwEAAaNQME4wHQYDVR0OBBYEFJSFOFjOlnq586iW1lKHV2Ra3PMtMB8GA1Ud
+| IwQYMBaAFJSFOFjOlnq586iW1lKHV2Ra3PMtMAwGA1UdEwQFMAMBAf8wDQYJKoZI
+| hvcNAQELBQADggEBAKDbHJdeVUnCqHH1bgffyqH6sgUixnj3yDB35mvQkrZcopoT
+| VQeHF9EudJJn4zSWRDwqbdJceQiBC13TTanYcWVIklMSVdVOXm0ELPJ8JaoUTCIo
+| SfmiS5Brs5YT8pkxh/AmTclQ/nw2wfVmywHqJEHkjr/PuucPclqJ6VpmZ31bNOv1
+| 3zPIXZ2FSRh5sl/t6XzhsiRQlhicowh7lOfRV+BaDvGOmYl5L6ip/7rgvlpE8Y4G
+| yGsScGFxEz5SgJPQmYOYGxsb6Hwp2ZGFxLLUYLP6wwyegeyU8tHH5G7NR7F+55Xs
+| 3eItjr429tcrE7aDJDlmkF8iLix+LBigl6b0wEM=
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|_  http/1.1
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug  9 22:30:41 2021 -- 1 IP address (1 host up) scanned in 25.27 seconds
